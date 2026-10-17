@@ -33,7 +33,7 @@
 <body>
 <main>
   <h1>Get My Time · Privacy policy</h1>
-  <p class="date">Last updated: 13 October 2026</p>
+  <p class="date">Last updated: 17 October 2026</p>
 
   <div class="short">
     <p><strong>Short version:</strong> Get My Time ("GMT") reads which apps you use and for how long, so it
@@ -43,13 +43,18 @@
 
   <h2>What GMT reads</h2>
   <ul>
-    <li><strong>App usage</strong> (Android "Usage access"): which app is on screen and when apps are opened
+    <li><strong>App usage on Android</strong> ("Usage access"): which app is on screen and when apps are opened
       and closed. GMT uses this to count time on the apps you limit, show the 10-second pause and the Time is up
       screen when an app's limit is reached. When you add an app, GMT also reads your time on it in the 7 days
       before, to compare later.</li>
-    <li><strong>The list of apps you can open</strong>, so you can pick which ones to limit.</li>
-    <li><strong>Your phone's country</strong> (from the SIM card or mobile network, or else the language
-      setting), to suggest a currency for the price of your time. You can change the currency.
+    <li><strong>App usage on iPhone</strong> (Apple Screen Time, "Family Controls"): you pick the apps in
+      Apple's own list. Apple then tells GMT only how many minutes you used each picked app today, and
+      shows the 10-second pause and the Time is up screen for it. Apple does not give GMT the names of
+      your apps or anything else about how you use your phone; the names you see in GMT are drawn by
+      Apple. iPhone gives no past usage, so GMT compares with your first week instead.</li>
+    <li><strong>The list of apps you can open</strong> (Android), so you can pick which ones to limit.</li>
+    <li><strong>Your phone's country</strong> (on Android from the SIM card or mobile network, or else the
+      language setting; on iPhone from the Region setting), to suggest a currency for the price of your time. You can change the currency.
       GMT stores only the currency you pick, not the country.</li>
   </ul>
   <p>GMT does not read your contacts, messages, photos, location, screen content or anything you do
@@ -64,6 +69,7 @@
   </ul>
 
   <h2>Permissions and why</h2>
+  <p>On Android:</p>
   <ul>
     <li><strong>Usage access:</strong> to measure time on the apps you limit.</li>
     <li><strong>Display over other apps:</strong> to show the 10-second pause and the Time is up screen.</li>
@@ -71,30 +77,39 @@
       while GMT watches your limits in the background.</li>
     <li><strong>Run at startup:</strong> so your limits keep working after the phone restarts or GMT updates.</li>
   </ul>
+  <p>On iPhone:</p>
+  <ul>
+    <li><strong>Screen Time (Family Controls):</strong> to count time on the apps you pick, show the
+      10-second pause and the Time is up screen, and keep each app closed after its limit until midnight.
+      You can turn it off in Settings &gt; Screen Time.</li>
+  </ul>
 
   <h2>What leaves your phone</h2>
   <ul>
     <li><strong>Nothing, by GMT itself.</strong> GMT does not send your usage, settings or totals anywhere.</li>
     <li><strong>Beta stats (testers only):</strong> these leave the phone only when you tap Share and pick an
       app, such as email or a chat app. You see the full text first. It holds your totals (minutes per
-      day, pause and button counts), the GMT version, your phone brand and model and the Android version.
+      day, pause and button counts), the GMT version, your phone brand and model and the Android or iOS version.
       It holds no app names. The app you pick sends it, under that app's own privacy policy.</li>
     <li><strong>My progress share card:</strong> an image that leaves the phone only when you tap Share and
       pick an app. It shows the time and money you got back, and app names only if you turn them on.
       The app you pick sends it, under that app's own privacy policy.</li>
     <li><strong>Send feedback:</strong> opens a Google Form in your browser. GMT puts nothing into it; only
       what you type and submit reaches the developer, under Google's privacy policy.</li>
-    <li><strong>Updates:</strong> GMT may ask Google Play whether a newer version exists and read a small
-      public file with the lowest version still allowed. These checks contain no data about you or your
+    <li><strong>Updates:</strong> on Android, GMT may ask Google Play whether a newer version exists. On both
+      phones it reads a small public file with the lowest version still allowed. These checks contain no data about you or your
       usage. As with any web request, the host of that file (GitHub) sees your IP address.</li>
     <li><strong>Android backup:</strong> if backup is on in your phone settings, Android may copy GMT's
       settings and totals into your own Google account backup, so they can come back on a new phone.
       This is managed by Google under your account; the developer cannot see it.</li>
+    <li><strong>iPhone backup:</strong> if iCloud Backup (or a backup to your computer) is on, iOS may copy
+      GMT's settings and totals into that backup. This is managed by Apple under your account; the
+      developer cannot see it.</li>
   </ul>
 
   <h2>Deleting your data</h2>
-  <p>Uninstall GMT, or go to Settings &gt; Apps &gt; Get My Time &gt; Storage &gt; Clear data. Either one
-    deletes everything GMT stored. Removing an app from GMT keeps its past daily totals (they count
+  <p>Android: uninstall GMT, or go to Settings &gt; Apps &gt; Get My Time &gt; Storage &gt; Clear data.
+    iPhone: delete the GMT app. Each of these deletes everything GMT stored. Removing an app from GMT keeps its past daily totals (they count
     toward your year) until you clear data or uninstall.</p>
 
   <h2>Children</h2>
@@ -107,7 +122,7 @@
   <h2>Contact</h2>
   <p>Questions about privacy: <a href="mailto:asadang.tan@gmail.com">asadang.tan@gmail.com</a></p>
 
-  <footer>Get My Time · Android app · package com.tritle.getmytime</footer>
+  <footer>Get My Time · Android and iPhone app · com.tritle.getmytime</footer>
 </main>
 </body>
 </html>
