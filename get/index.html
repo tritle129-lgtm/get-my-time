@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Get My Time</title>
+<meta name="description" content="Get My Time (GMT): see what your scrolling costs and take your time back. iPhone and Android.">
+<!-- A28 one link for both phones (the share-card QR, assets/brand/qr_get.png, points here): a phone goes straight
+     to its store; a computer, or an in-app browser that blocks the jump, sees both buttons and the QR. -->
+<script>
+  (function () {
+    var ua = navigator.userAgent;
+    var ios = /iPhone|iPad|iPod/.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1);
+    var url = ios ? "https://apps.apple.com/app/id6823900088"
+      : /Android/.test(ua) ? "https://play.google.com/store/apps/details?id=com.tritle.getmytime" : null;
+    if (url) { document.documentElement.className = "phone"; location.replace(url); }
+  })();
+</script>
+<style>
+  :root {
+    --bg: #FFF8F1; --card: #F7EBDD; --text: #2B2023; --muted: #6B5A50; --button: #0E7C86; --on-button: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #1E1719; --card: #2B2023; --text: #F7EBDD; --muted: #C9B6A6; --button: #16A9B5; --on-button: #1E1719; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text); text-align: center;
+    font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 420px; margin: 0 auto; padding: 40px 16px 48px; }
+  .icon { width: 96px; height: 96px; border-radius: 22px; }
+  h1 { font-size: 1.7rem; margin: 16px 0 4px; }
+  .lead { color: var(--muted); margin: 0 0 28px; }
+  .store {
+    display: block; padding: 14px 16px; margin: 0 0 12px; border-radius: 14px;
+    background: var(--button); color: var(--on-button); font-weight: 600; text-decoration: none;
+  }
+  .scan { background: var(--card); border-radius: 18px; padding: 20px 16px 16px; margin-top: 28px; }
+  .scan img { width: 180px; height: 180px; border-radius: 8px; display: block; margin: 0 auto 10px; }
+  .scan p { margin: 0; color: var(--muted); }
+  .opening { display: none; color: var(--muted); margin: 0 0 20px; }
+  .phone .opening { display: block; }
+  .phone .scan { display: none; }
+  footer { margin-top: 32px; font-size: 0.9rem; color: var(--muted); }
+  footer a { color: inherit; }
+</style>
+</head>
+<body>
+<main>
+  <img class="icon" src="icon.png" alt="">
+  <h1>Get My Time</h1>
+  <p class="lead">See what your scrolling costs. Take your time back.</p>
+  <p class="opening">Opening the store…</p>
+  <a class="store" href="https://apps.apple.com/app/id6823900088">Download on the App Store</a>
+  <a class="store" href="https://play.google.com/store/apps/details?id=com.tritle.getmytime">Get it on Google Play</a>
+  <div class="scan">
+    <img src="qr.svg" alt="QR code for this page">
+    <p>On a computer? Scan this with your phone's camera.</p>
+  </div>
+  <footer><a href="../">About GMT</a> · <a href="../privacy.html">Privacy</a></footer>
+</main>
+</body>
+</html>
