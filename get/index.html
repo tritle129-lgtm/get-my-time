@@ -6,14 +6,18 @@
 <title>Get My Time</title>
 <meta name="description" content="Get My Time (GMT): see what your scrolling costs and take your time back. iPhone and Android.">
 <!-- A28 one link for both phones (the share-card QR, assets/brand/qr_get.png, points here): a phone goes straight
-     to its store; a computer, or an in-app browser that blocks the jump, sees both buttons and the QR. -->
+     to its store; a computer, or an in-app browser that blocks the jump, sees both buttons and the QR.
+     GO1 (user 2026-11-04: Android goes live first): until the App Store release is public, IOS_LIVE = false keeps
+     iPhones on this page with "Coming soon on iPhone" instead of a dead App Store link. Set true the day it is public. -->
 <script>
   (function () {
+    var IOS_LIVE = false;
     var ua = navigator.userAgent;
     var ios = /iPhone|iPad|iPod/.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1);
-    var url = ios ? "https://apps.apple.com/app/id6823900088"
+    var url = ios ? (IOS_LIVE ? "https://apps.apple.com/app/id6823900088" : null)
       : /Android/.test(ua) ? "https://play.google.com/store/apps/details?id=com.tritle.getmytime" : null;
-    if (url) { document.documentElement.className = "phone"; location.replace(url); }
+    if (!IOS_LIVE) document.documentElement.classList.add("no-ios");
+    if (url) { document.documentElement.classList.add("phone"); location.replace(url); }
   })();
 </script>
 <style>
@@ -42,6 +46,9 @@
   .opening { display: none; color: var(--muted); margin: 0 0 20px; }
   .phone .opening { display: block; }
   .phone .scan { display: none; }
+  .soon { display: none; color: var(--muted); margin: 0 0 12px; }
+  .no-ios .soon { display: block; }
+  .no-ios .appstore { display: none; }
   footer { margin-top: 32px; font-size: 0.9rem; color: var(--muted); }
   footer a { color: inherit; }
 </style>
@@ -52,8 +59,9 @@
   <h1>Get My Time</h1>
   <p class="lead">See what your scrolling costs. Take your time back.</p>
   <p class="opening">Opening the store…</p>
-  <a class="store" href="https://apps.apple.com/app/id6823900088">Download on the App Store</a>
+  <a class="store appstore" href="https://apps.apple.com/app/id6823900088">Download on the App Store</a>
   <a class="store" href="https://play.google.com/store/apps/details?id=com.tritle.getmytime">Get it on Google Play</a>
+  <p class="soon">Coming soon on iPhone.</p>
   <div class="scan">
     <img src="qr.svg" alt="QR code for this page">
     <p>On a computer? Scan this with your phone's camera.</p>
