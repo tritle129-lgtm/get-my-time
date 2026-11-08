@@ -8,16 +8,33 @@
 <!-- A28 one link for both phones (the share-card QR, assets/brand/qr_get.png, points here): a phone goes straight
      to its store; a computer, or an in-app browser that blocks the jump, sees both buttons and the QR.
      GO1 (user 2026-11-04: Android goes live first): until the App Store release is public, IOS_LIVE = false keeps
-     iPhones on this page with "Coming soon on iPhone" instead of a dead App Store link. Set true the day it is public. -->
+     iPhones on this page with "Coming soon on iPhone" instead of a dead App Store link. Set true the day it is public.
+     SRC1 source tag (docs/marketing/REF1-invite.md section 8): /get/?s=line passes "line" on to the store so its
+     console counts installs per channel. Only ^[a-z0-9-]{1,20}$ is used; anything else = no tag. Nothing is stored
+     and nothing from s is written into the page. Tags in use: invite, card, line, fb, tiktok, pantip, x.
+     Play: referrer=utm_source=<s>&utm_medium=get. App Store: pt=<IOS_PT>&ct=<s>, only once IOS_PT is set (the
+     provider token from App Store Connect > Analytics > Campaigns, which appears after the iPhone release). -->
 <script>
   (function () {
     var IOS_LIVE = false;
+    var IOS_PT = "";
+    var PLAY = "https://play.google.com/store/apps/details?id=com.tritle.getmytime";
+    var APPLE = "https://apps.apple.com/app/id6823900088";
+    var m = /[?&]s=([^&#]*)/.exec(location.search);
+    var s = m && /^[a-z0-9-]{1,20}$/.test(m[1]) ? m[1] : "";
+    if (s) {
+      PLAY += "&referrer=" + encodeURIComponent("utm_source=" + s + "&utm_medium=get");
+      if (IOS_PT) APPLE = "https://apps.apple.com/app/apple-store/id6823900088?pt=" + IOS_PT + "&ct=" + s + "&mt=8";
+    }
     var ua = navigator.userAgent;
     var ios = /iPhone|iPad|iPod/.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1);
-    var url = ios ? (IOS_LIVE ? "https://apps.apple.com/app/id6823900088" : null)
-      : /Android/.test(ua) ? "https://play.google.com/store/apps/details?id=com.tritle.getmytime" : null;
+    var url = ios ? (IOS_LIVE ? APPLE : null) : /Android/.test(ua) ? PLAY : null;
     if (!IOS_LIVE) document.documentElement.classList.add("no-ios");
     if (url) { document.documentElement.classList.add("phone"); location.replace(url); }
+    document.addEventListener("DOMContentLoaded", function () {
+      document.getElementById("appstore").href = APPLE;
+      document.getElementById("play").href = PLAY;
+    });
   })();
 </script>
 <style>
@@ -59,8 +76,8 @@
   <h1>Get My Time</h1>
   <p class="lead">See what your scrolling costs. Take your time back.</p>
   <p class="opening">Opening the store…</p>
-  <a class="store appstore" href="https://apps.apple.com/app/id6823900088">Download on the App Store</a>
-  <a class="store" href="https://play.google.com/store/apps/details?id=com.tritle.getmytime">Get it on Google Play</a>
+  <a class="store appstore" id="appstore" href="https://apps.apple.com/app/id6823900088">Download on the App Store</a>
+  <a class="store" id="play" href="https://play.google.com/store/apps/details?id=com.tritle.getmytime">Get it on Google Play</a>
   <p class="soon">Coming soon on iPhone.</p>
   <div class="scan">
     <img src="qr.svg" alt="QR code for this page">
