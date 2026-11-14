@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tritle129-lgtm.github.io/get-my-time/sitemap.xml
