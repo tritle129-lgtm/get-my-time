@@ -36,10 +36,15 @@ a{color:var(--link)}
 .top .wrap{display:flex;justify-content:space-between;align-items:center;gap:12px;height:56px}
 .brand{display:flex;align-items:center;gap:8px;font-weight:700;color:var(--text);text-decoration:none}
 .brand img{border-radius:7px}
-.right{display:flex;align-items:center;gap:16px}
-.lang{font-size:.9rem}
+.right{display:flex;align-items:center;gap:10px}
+.lang{display:flex;background:var(--card);border-radius:99px;padding:3px;font-size:.88rem;font-weight:600}
+.lang a,.lang span{padding:5px 11px;border-radius:99px;text-decoration:none;color:var(--muted);min-height:30px;display:inline-flex;align-items:center}
+.lang span{background:var(--bg);color:var(--text);box-shadow:0 1px 3px rgba(0,0,0,.12)}
 .pill{background:var(--button);color:var(--on-button);font-weight:600;font-size:.95rem;text-decoration:none;padding:8px 16px;border-radius:99px;min-height:36px;display:inline-flex;align-items:center}
-@media(max-width:480px){.top .lang{display:none}}
+@media(max-width:430px){.right{gap:8px}.lang a,.lang span{padding:5px 9px}.top .pill{padding:7px 12px;font-size:.9rem}}
+.top .pill,.lang{white-space:nowrap;flex-shrink:0}
+.brand{min-width:0;white-space:nowrap}
+@media(max-width:359px){.bt{display:none}}
 h1{font-size:clamp(2.7rem,10vw,6.2rem);line-height:1.02;letter-spacing:-.035em;font-weight:800;margin:0 0 20px}
 h2{font-size:clamp(2.1rem,6.5vw,4rem);line-height:1.08;letter-spacing:-.03em;font-weight:800;margin:0 0 20px}
 h3{font-size:1.15rem;margin:28px 0 4px}
@@ -138,7 +143,7 @@ html{scroll-behavior:auto}
 </style>
 </head>
 <body>
-<header class="top"><div class="wrap"><a class="brand" href="../"><img src="../get/icon.png" alt="" width="28" height="28">Get My Time</a><div class="right"><a class="lang" hreflang="th" lang="th" href="../th/app-to-limit-tiktok/">ภาษาไทย</a><a class="pill" href="../get/">Get the app</a></div></div></header>
+<header class="top"><div class="wrap"><a class="brand" href="../"><img src="../get/icon.png" alt="" width="28" height="28"><span class="bt">Get My Time</span></a><div class="right"><nav class="lang" aria-label="Language"><span lang="en" aria-current="page">EN</span><a lang="th" hreflang="th" href="../th/app-to-limit-tiktok/">ไทย</a></nav><a class="pill" href="../get/">Get the app</a></div></div></header>
 <main id="top">
 <article class="q"><div class="wrap narrow">
 <section class="qtop">
