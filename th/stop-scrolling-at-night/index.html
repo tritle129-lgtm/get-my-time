@@ -18,77 +18,162 @@
 <meta property="og:image" content="https://tritle129-lgtm.github.io/get-my-time/get/icon.png">
 <meta property="og:locale" content="th_TH">
 <meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#FFF8F1" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1E1719" media="(prefers-color-scheme: dark)">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Get My Time","item":"https://tritle129-lgtm.github.io/get-my-time/th/"},{"@type":"ListItem","position":2,"name":"เลิกเล่นมือถือก่อนนอน ทำยังไง","item":"https://tritle129-lgtm.github.io/get-my-time/th/stop-scrolling-at-night/"}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"th","mainEntity":[{"@type":"Question","name":"ทำยังไงให้เลิกไถมือถือบนเตียง","acceptedAnswer":{"@type":"Answer","text":"ชาร์จมือถือให้ไกลเตียง และตั้งเวลาวางมือถือ วางหนังสือหรือนาฬิกาปลุกไว้ใกล้เตียงแทน"}},{"@type":"Question","name":"ทำไมเหนื่อยแล้วยังไถต่อ","acceptedAnswer":{"@type":"Answer","text":"ฟีดไม่ต้องใช้แรง ตอนเหนื่อยจึงไถต่อได้ง่าย การทำให้เปิดยากขึ้นช่วยได้"}},{"@type":"Question","name":"Get My Time ปิดแอปตามชั่วโมงตอนกลางคืนได้ไหม","acceptedAnswer":{"@type":"Answer","text":"เวลาต่อวันจะหยุดแอปเมื่อใช้ครบ จนถึงเที่ยงคืน ถ้าใช้ Golden Sand ยังบล็อกแอปตามชั่วโมงที่เลือกได้ด้วย"}},{"@type":"Question","name":"แอปทำงานตอนฉันนอนไหม","acceptedAnswer":{"@type":"Answer","text":"แอปทำงานบนมือถือของคุณโดยไม่ต้องมีบัญชี หน้าหมดเวลาแล้วจะปิดแอปไว้จนถึงเที่ยงคืน แล้วเปิดได้อีกครั้ง"}}]}</script>
-<style>:root{--bg:#FFF8F1;--card:#F7EBDD;--line:#E3CAAE;--text:#2B2023;--muted:#6B5A50;--button:#0E7C86;--on-button:#fff;--link:#0E7C86}
-@media (prefers-color-scheme:dark){:root{--bg:#1E1719;--card:#2B2023;--line:#4a3c36;--text:#F7EBDD;--muted:#C9B6A6;--button:#16A9B5;--on-button:#1E1719;--link:#5EE3D6}}
+<script>document.documentElement.classList.add('js')</script>
+<style>:root{--bg:#FFF8F1;--card:#F7EBDD;--line:#E3CAAE;--text:#2B2023;--muted:#6B5A50;--button:#0E7C86;--on-button:#fff;--link:#0E7C86;--ring:#16A9B5;--glow:#F7E4D3;--bar:rgba(255,248,241,.82)}
+@media (prefers-color-scheme:dark){:root{--bg:#1E1719;--card:#2B2023;--line:#4a3c36;--text:#F7EBDD;--muted:#C9B6A6;--button:#16A9B5;--on-button:#1E1719;--link:#5EE3D6;--ring:#5EE3D6;--glow:#33262a;--bar:rgba(30,23,25,.82)}}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--text);font:17px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans Thai","Leelawadee UI",sans-serif}
-.top{max-width:720px;margin:0 auto;padding:14px 16px;display:flex;justify-content:space-between;align-items:center;gap:12px}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans Thai","Leelawadee UI",sans-serif;overflow-x:hidden}
+:lang(th) body,:lang(th) h1,:lang(th) h2{line-height:1.35}
+a{color:var(--link)}
+.wrap{max-width:1100px;margin:0 auto;padding:0 16px}
+.narrow{max-width:720px;margin-left:auto;margin-right:auto}
+.top{position:sticky;top:0;z-index:10;background:var(--bar);-webkit-backdrop-filter:saturate(1.6) blur(14px);backdrop-filter:saturate(1.6) blur(14px)}
+.top .wrap{display:flex;justify-content:space-between;align-items:center;gap:12px;height:56px}
 .brand{display:flex;align-items:center;gap:8px;font-weight:700;color:var(--text);text-decoration:none}
 .brand img{border-radius:7px}
-.lang{color:var(--link)}
-main{max-width:720px;margin:0 auto;padding:8px 16px 48px}
-h1{font-size:2rem;line-height:1.2;margin:16px 0 12px}
-h2{font-size:1.3rem;line-height:1.3;margin:36px 0 10px}
-h3{font-size:1.05rem;margin:20px 0 4px}
-p,ul{margin:0 0 12px}
-ul{padding-left:22px}
-li{margin-bottom:6px}
-a{color:var(--link)}
-.hero{text-align:center;padding:12px 0 8px}
-.hg{display:block;margin:0 auto;width:160px;height:160px}
-.hero h1{font-size:2.3rem}
-.lead{font-size:1.15rem}
-.answer{font-weight:500}
+.right{display:flex;align-items:center;gap:16px}
+.lang{font-size:.9rem}
+.pill{background:var(--button);color:var(--on-button);font-weight:600;font-size:.95rem;text-decoration:none;padding:8px 16px;border-radius:99px;min-height:36px;display:inline-flex;align-items:center}
+@media(max-width:480px){.top .lang{display:none}}
+h1{font-size:clamp(2.7rem,10vw,6.2rem);line-height:1.02;letter-spacing:-.035em;font-weight:800;margin:0 0 20px}
+h2{font-size:clamp(2.1rem,6.5vw,4rem);line-height:1.08;letter-spacing:-.03em;font-weight:800;margin:0 0 20px}
+h3{font-size:1.15rem;margin:28px 0 4px}
+p{margin:0 0 14px}
+.lead{font-size:clamp(1.15rem,3vw,1.5rem);line-height:1.45;color:var(--muted);max-width:34em}
 .small{color:var(--muted);font-size:.92rem}
-.button{display:inline-block;background:var(--button);color:var(--on-button);font-weight:600;text-decoration:none;padding:14px 28px;border-radius:14px;margin:8px 0}
-.box{background:var(--card);border-radius:18px;padding:4px 20px 12px;margin-top:36px}
-.box h2{margin-top:18px}
+.c{text-align:center}.c .lead{margin-left:auto;margin-right:auto}
+.button{display:inline-flex;align-items:center;justify-content:center;background:var(--button);color:var(--on-button);font:600 1.1rem/1 inherit;font-family:inherit;text-decoration:none;padding:18px 34px;border-radius:99px;min-height:56px;border:0;cursor:pointer;transition:transform .2s}
+.button:hover{transform:scale(1.03)}
+.button.ghost{background:transparent;color:var(--link);box-shadow:inset 0 0 0 2px var(--link)}
+:focus-visible{outline:3px solid var(--ring);outline-offset:3px}
+section{padding:clamp(72px,14vh,150px) 0}
+.pt0{padding-top:0}
+.h2s{font-size:clamp(1.7rem,4.5vw,2.6rem)}
+.hero{min-height:calc(100vh - 56px);display:flex;align-items:center;padding:40px 0;background:radial-gradient(60% 50% at 50% 38%,var(--glow),transparent 70%)}
+.hero .wrap{width:100%}
+.hero .hg{width:clamp(130px,26vw,220px);height:auto;margin:0 auto 24px;display:block;animation:float 6s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-10px)}}
+.js .rv{opacity:0;transform:translateY(32px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
+.js .rv.in{opacity:1;transform:none}
+.beats{list-style:none;padding:0;margin:48px 0 0}
+.beat{font-size:clamp(1.9rem,6.4vw,4.2rem);line-height:1.12;font-weight:800;letter-spacing:-.03em;padding:.35em 0;transition:opacity .5s}
+.js .beat{opacity:.18}.js .beat.on{opacity:1}
+.pause{background:var(--card);border-radius:36px;padding:clamp(32px,6vw,72px) 16px;text-align:center;overflow:hidden}
+.pause .lead{margin:0 auto}
+.stage{position:relative;width:min(280px,72vw);aspect-ratio:1;margin:28px auto}
+.stage svg{position:absolute;inset:0;width:100%;height:100%;transform:rotate(-90deg)}
+.stage circle{fill:none;stroke-width:6;stroke-linecap:round}
+.stage .bg{stroke:var(--line)}
+.stage .fg{stroke:var(--ring);stroke-dasharray:597;stroke-dashoffset:597}
+.stage.run .fg{animation:fill 10s linear forwards}
+@keyframes fill{to{stroke-dashoffset:0}}
+.stage img{position:absolute;inset:18%;width:64%;height:64%}
+.stage.run img{animation:breathe 5s ease-in-out infinite}
+@keyframes breathe{50%{transform:scale(1.12)}}
+.count{font-size:clamp(3rem,10vw,5rem);font-weight:800;line-height:1;font-variant-numeric:tabular-nums;min-height:1em;margin:0 0 6px}
+.say{min-height:1.6em;font-size:1.2rem;font-weight:600;margin-bottom:22px}
+.choices{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+[hidden]{display:none!important}
+.days{text-align:center}
+.days .lead{margin:0 auto 24px}
+.big{font-size:clamp(5rem,26vw,13rem);font-weight:800;letter-spacing:-.05em;line-height:1;font-variant-numeric:tabular-nums;color:var(--link);margin:10px 0 0}
+.unit{font-size:clamp(1.3rem,4vw,2rem);font-weight:700;margin-bottom:32px}
+.dial{max-width:520px;margin:0 auto}
+.dial label{display:flex;justify-content:space-between;font-weight:600;margin-bottom:12px}
+.dial .small{margin-top:12px}
+input[type=range]{width:100%;height:44px;accent-color:var(--button);cursor:pointer}
+.steps .step{padding:40px 0}
+.step h3{font-size:clamp(1.6rem,4.5vw,2.6rem);line-height:1.12;letter-spacing:-.02em;font-weight:800;margin:0 0 12px}
+.step p{color:var(--muted);font-size:1.15rem}
+.phone{width:240px;aspect-ratio:9/19;border:8px solid #2B2023;border-radius:38px;overflow:hidden;background:#000;margin:24px auto 0;position:relative;box-shadow:0 30px 60px -20px rgba(0,0,0,.35)}
+.phone img{width:100%;height:100%;object-fit:cover;object-position:top;display:block}
+.dev{display:none}
+@media(min-width:820px){
+.story{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
+.sync .step{min-height:80vh;display:flex;flex-direction:column;justify-content:center}
+.sync .step .phone{display:none}
+.sync .dev{display:block;position:sticky;top:calc(50vh - 260px);width:280px;margin:0 auto}
+.sync .dev .phone{width:280px;margin:0}
+.dev img{position:absolute;inset:0;opacity:0;transition:opacity .5s}
+.dev[data-i="0"] img:nth-child(1),.dev[data-i="1"] img:nth-child(2),.dev[data-i="2"] img:nth-child(3){opacity:1}
+}
+.box{background:var(--card);border-radius:28px;padding:clamp(24px,5vw,56px)}
+.box h2{font-size:clamp(1.6rem,4vw,2.4rem)}
+.box p{font-size:1.15rem;margin:0}
+.box .note{font-size:.92rem;margin-top:14px}
 .scroll{overflow-x:auto}
-table{border-collapse:collapse;width:100%;font-size:.95rem}
-th,td{text-align:left;padding:8px 6px;border-bottom:1px solid var(--line);vertical-align:top}
+table{border-collapse:collapse;width:100%;font-size:1rem}
+th,td{text-align:left;padding:14px 8px;border-bottom:1px solid var(--line);vertical-align:top}
 th:not(:first-child),td:not(:first-child){text-align:center;width:22%}
-.plain{list-style:none;padding:0}
-.more ul{padding-left:20px}
-footer{max-width:720px;margin:0 auto;padding:16px 16px 40px;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
-footer p{margin:4px 0}
-footer a{color:inherit}
+.tiers{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));list-style:none;padding:0;margin:0 0 14px}
+.tiers li{background:var(--card);border-radius:20px;padding:20px}
+.tiers strong{display:block}
+h2.h2s{margin-top:64px}
+.faq h3{border-top:1px solid var(--line);padding-top:20px}
+.more{padding:0 0 80px}
+.more h2.h2s{margin-top:0}
+.more ul{padding-left:20px}.more li{margin-bottom:10px}
+.cta{text-align:center}
+.cta .hg2{width:120px;height:auto}
+footer{border-top:1px solid var(--line);color:var(--muted);font-size:.9rem;padding:24px 0 48px}
+footer p{margin:4px 0}footer a{color:inherit}
+.q h1{font-size:clamp(2.2rem,7vw,4.4rem)}
+.q .answer{font-size:clamp(1.2rem,3.2vw,1.6rem);line-height:1.45;font-weight:500;color:var(--text);max-width:30em}
+.q section{padding:clamp(40px,8vh,80px) 0}
+.q .qtop{padding-top:40px}
+.q h2{font-size:clamp(1.7rem,4.5vw,2.6rem)}
+.q li{margin-bottom:8px;font-size:1.1rem}
+.q .quiet{background:var(--card);border-radius:28px;padding:clamp(24px,5vw,48px)}
+.quiet .go{margin-top:20px}
+@media(prefers-reduced-motion:reduce){
+html{scroll-behavior:auto}
+*{animation:none!important;transition:none!important}
+.js .rv{opacity:1;transform:none}.js .beat{opacity:1}
+}
 </style>
 </head>
 <body>
-<header class="top"><a class="brand" href="../../th/"><img src="../../get/icon.png" alt="" width="28" height="28">Get My Time</a><a class="lang" hreflang="en" lang="en" href="../../stop-scrolling-at-night/">English</a></header>
-<main>
+<header class="top"><div class="wrap"><a class="brand" href="../../th/"><img src="../../get/icon.png" alt="" width="28" height="28">Get My Time</a><div class="right"><a class="lang" hreflang="en" lang="en" href="../../stop-scrolling-at-night/">English</a><a class="pill" href="../../get/">โหลดแอป</a></div></div></header>
+<main id="top">
+<article class="q"><div class="wrap narrow">
+<section class="qtop">
 <h1>เลิกเล่นมือถือก่อนนอน ทำยังไง</h1>
-<p class="lead answer">ถ้าอยากเลิกเล่นมือถือก่อนนอน ให้ตั้งเวลาวางมือถือ และทำให้เปิดฟีดบนเตียงยากขึ้น การเปลี่ยนนิสัยเล็ก ๆ ช่วยได้เกือบทั้งหมด</p>
-<section>
-<h2>ทำไมถึงไถตอนกลางคืน</h2>
-<p>ตอนเหนื่อย การคิดเป็นเรื่องยาก ฟีดไม่ขออะไรจากคุณเลย เลยไถต่อไปได้เรื่อย ๆ แม้อยากหยุด</p>
-<p>เรื่องนี้เจอได้บ่อยมาก คุณจัดช่วงเย็นให้หยุดง่ายขึ้นได้</p>
+<p class="answer">ถ้าอยากเลิกเล่นมือถือก่อนนอน ให้ตั้งเวลาวางมือถือ และทำให้เปิดฟีดบนเตียงยากขึ้น การเปลี่ยนนิสัยเล็ก ๆ ช่วยได้เกือบทั้งหมด</p>
 </section>
 <section>
-<h2>นิสัยง่าย ๆ ที่ไม่ต้องใช้แอป</h2>
-<p>ลองสักหนึ่งหรือสองข้อในสัปดาห์นี้</p>
+<h2 class="rv">ทำไมถึงไถตอนกลางคืน</h2>
+<p class="lead">ตอนเหนื่อย การคิดเป็นเรื่องยาก ฟีดไม่ขออะไรจากคุณเลย เลยไถต่อไปได้เรื่อย ๆ แม้อยากหยุด</p>
+<p class="lead">เรื่องนี้เจอได้บ่อยมาก คุณจัดช่วงเย็นให้หยุดง่ายขึ้นได้</p>
+</section>
+<section>
+<h2 class="rv">นิสัยง่าย ๆ ที่ไม่ต้องใช้แอป</h2>
+<p class="lead">ลองสักหนึ่งหรือสองข้อในสัปดาห์นี้</p>
 <ul><li>ตั้งเวลาวางมือถือ แล้วตั้งนาฬิกาปลุกเตือน</li><li>ชาร์จมือถืออีกฝั่งของห้อง ไม่ใช่ข้างหมอน</li><li>ซื้อนาฬิกาปลุกราคาถูก จะได้ไม่ต้องใช้มือถือปลุก</li><li>วางหนังสือไว้ที่ที่เคยวางมือถือ</li><li>ปิดการแจ้งเตือนจากฟีดหลังมื้อเย็น</li></ul>
 </section>
-<section>
+<section><div class="quiet rv">
 <h2>GMT ช่วยตอนเย็นยังไง</h2>
 <p>GMT เป็นแอปบน Android และ iPhone ตั้งเวลาต่อวันให้แอปฟีด พอครบ หน้าหมดเวลาแล้วจะหยุดแอปจนถึงเที่ยงคืน ปิดแอป แล้วไปนอน</p>
 <p>ก่อนแอปที่จำกัดไว้จะเปิด มีพัก 10 วินาที เป็นช่วงสั้น ๆ ให้ถามตัวเองว่าตอนนี้อยากเปิดจริงไหม</p>
 <p>ถ้าใช้ Golden Sand ยังบล็อกแอปตามชั่วโมงที่เลือกได้ เช่น ช่วงดึก</p>
-</section>
+<p class="go"><a class="button" href="../../get/">โหลดแอป</a></p>
+</div></section>
 <section>
-<h2>มีเย็นดี ๆ มากขึ้น</h2>
-<p>GMT ยังบอกเวลาที่คุณได้คืนมา ช่วงเย็นเป็นของคนที่คุณรักและสิ่งที่คุณรัก เริ่มใช้ฟรี ไม่ต้องสมัครบัญชี</p>
+<h2 class="rv">มีเย็นดี ๆ มากขึ้น</h2>
+<p class="lead">GMT ยังบอกเวลาที่คุณได้คืนมา ช่วงเย็นเป็นของคนที่คุณรักและสิ่งที่คุณรัก เริ่มใช้ฟรี ไม่ต้องสมัครบัญชี</p>
 </section>
-<section class="box">
+</div></article>
+<section class="pt0"><div class="wrap narrow"><div class="box rv">
 <h2>สรุปในประโยคเดียว</h2>
 <p>Get My Time (GMT) คือแอปบน Android และ iPhone ที่เริ่มใช้ได้ฟรี ช่วยให้ไถฟีดน้อยลง: พักหายใจ 10 วินาทีก่อนเปิดแอปที่จำกัดไว้ แสดงเวลาหน้าจอเป็นเงินและเป็นวันในปีของคุณ และหยุดแอปเมื่อครบเวลาต่อวันจนถึงเที่ยงคืน ไม่ต้องสมัครบัญชี ข้อมูลอยู่ในมือถือของคุณ</p>
-<p class="small">ตอนนี้ตัวแอปเป็นภาษาอังกฤษ</p>
-<p><a class="button" href="../../get/">โหลดแอป</a></p>
-</section>
-<section>
-<h2>คำถามที่พบบ่อย</h2>
+<p class="small note">ตอนนี้ตัวแอปเป็นภาษาอังกฤษ</p>
+</div></div></section>
+<section class="faq pt0"><div class="wrap narrow">
+<h2 class="rv">คำถามที่พบบ่อย</h2>
 <h3>ทำยังไงให้เลิกไถมือถือบนเตียง</h3>
 <p>ชาร์จมือถือให้ไกลเตียง และตั้งเวลาวางมือถือ วางหนังสือหรือนาฬิกาปลุกไว้ใกล้เตียงแทน</p>
 <h3>ทำไมเหนื่อยแล้วยังไถต่อ</h3>
@@ -97,9 +182,9 @@ footer a{color:inherit}
 <p>เวลาต่อวันจะหยุดแอปเมื่อใช้ครบ จนถึงเที่ยงคืน ถ้าใช้ Golden Sand ยังบล็อกแอปตามชั่วโมงที่เลือกได้ด้วย</p>
 <h3>แอปทำงานตอนฉันนอนไหม</h3>
 <p>แอปทำงานบนมือถือของคุณโดยไม่ต้องมีบัญชี หน้าหมดเวลาแล้วจะปิดแอปไว้จนถึงเที่ยงคืน แล้วเปิดได้อีกครั้ง</p>
-</section>
-<nav class="more">
-<h2>คำถามอื่นที่คนถามบ่อย</h2>
+</div></section>
+<nav class="more"><div class="wrap narrow">
+<h2 class="h2s">คำถามอื่นที่คนถามบ่อย</h2>
 <ul>
 <li><a href="../../th/how-to-stop-doom-scrolling/">วิธีเลิกไถฟีด ทำยังไงให้เลิกไถมือถือ</a></li>
 <li><a href="../../th/where-does-my-phone-time-go/">เวลาหน้าจอหายไปไหน ดูเวลาเล่นมือถือยังไง</a></li>
@@ -108,8 +193,58 @@ footer a{color:inherit}
 <li><a href="../../th/app-blocker-android-iphone/">แอปล็อกแอป แอปบล็อกแอป สำหรับ Android และ iPhone</a></li>
 <li><a href="../../th/more-than-screen-time-minutes/">มีอะไรที่ดีกว่าตัวเช็กเวลาหน้าจอในมือถือไหม</a></li>
 </ul>
-</nav>
+</div></nav>
+<section class="cta pt0" id="cta"><div class="wrap">
+<img class="hg2" src="../../img/hg_calm.png" alt="" width="120" height="120" loading="lazy">
+<h2 class="rv">เอาเวลาตอนเย็นของคุณคืนมา</h2>
+<p><a class="button" href="../../get/">โหลดแอป</a></p>
+<p class="small">เริ่มใช้ฟรี ไม่ต้องสมัครบัญชี ข้อมูลอยู่ในมือถือของคุณ</p>
+</div></section>
 </main>
-<footer><p>สร้างโดยนักพัฒนาคนเดียวในประเทศไทย</p><p><a href="../../th/">Get My Time</a> · <a href="../../support.html">ช่วยเหลือ</a> · <a href="../../privacy.html">ความเป็นส่วนตัว</a> · <a href="../../terms.html">ข้อกำหนด</a></p></footer>
+<footer id="footer"><div class="wrap"><p>สร้างโดยนักพัฒนาคนเดียวในประเทศไทย</p><p><a href="../../th/">Get My Time</a> · <a href="../../support.html">ช่วยเหลือ</a> · <a href="../../privacy.html">ความเป็นส่วนตัว</a> · <a href="../../terms.html">ข้อกำหนด</a> · <a hreflang="en" lang="en" href="../../stop-scrolling-at-night/">English</a></p></div></footer>
+<script>(function(){
+var d=document,g=function(i){return d.getElementById(i)},
+rm=matchMedia('(prefers-reduced-motion: reduce)').matches,
+IO='IntersectionObserver' in window,
+io=function(cb,o){return IO?new IntersectionObserver(cb,o):null},
+each=function(s,f){[].forEach.call(d.querySelectorAll(s),f)};
+var r=io(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');r.unobserve(e.target)}})},{threshold:.15});
+each('.rv',function(e){r?r.observe(e):e.classList.add('in')});
+var b=io(function(es){es.forEach(function(e){e.target.classList.toggle('on',e.isIntersecting)})},{rootMargin:'-42% 0px -42% 0px'});
+each('.beat',function(e){b?b.observe(e):e.classList.add('on')});
+var P=g('pause');
+if(P){
+var w=P.dataset,st=g('stage'),cnt=g('count'),say=g('say'),B={s:g('start'),x:g('exit'),c:g('cont'),a:g('again')},t;
+var vis=function(l){for(var k in B)B[k].hidden=l.indexOf(k)<0};
+var run=function(){
+vis('');st.classList.remove('run');void st.offsetWidth;st.classList.add('run');
+var n=10;cnt.textContent=n;say.textContent=rm?w.reduced:w.in;clearInterval(t);
+t=setInterval(function(){
+n--;cnt.textContent=n>0?n:'';
+if(!rm&&n>0)say.textContent=n%5>2?w.in:w.out;
+if(n<=0){clearInterval(t);say.textContent=w.done;vis('xc')}
+},1000)};
+var end=function(m){return function(){st.classList.remove('run');say.textContent=m;vis('a')}};
+B.s.onclick=B.a.onclick=run;B.x.onclick=end(w.exitMsg);B.c.onclick=end(w.contMsg);
+vis('s');
+}
+var m=g('mins');
+if(m){
+var big=g('big'),mo=g('minsOut'),cur=+big.textContent,raf;
+var paint=function(to){
+cancelAnimationFrame(raf);
+if(rm){cur=to;big.textContent=to.toFixed(1);return}
+var from=cur,t0=performance.now();
+(function f(n){var p=Math.min((n-t0)/450,1);cur=from+(to-from)*(1-Math.pow(1-p,3));big.textContent=cur.toFixed(1);if(p<1)raf=requestAnimationFrame(f)})(t0)};
+m.oninput=function(){mo.textContent=m.value;paint(m.value*365/1440)};
+}
+var dev=g('dev'),steps=d.querySelectorAll('.step');
+if(dev&&steps.length&&IO){
+g('story').classList.add('sync');
+var s=io(function(es){es.forEach(function(e){if(e.isIntersecting)dev.dataset.i=[].indexOf.call(steps,e.target)})},{rootMargin:'-45% 0px -45% 0px'});
+each('.step',function(e){s.observe(e)});
+}
+})();
+</script>
 </body>
 </html>
