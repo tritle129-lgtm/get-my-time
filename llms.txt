@@ -1,0 +1,61 @@
+# Get My Time (GMT)
+
+> Get My Time (GMT) is a free-to-start app for Android and iPhone that helps you scroll less: it adds a 10-second pause before a limited app opens, shows your screen time as money and days of your year, and stops the app at your daily limit until midnight. No account is needed and your data stays on your phone.
+
+- Google Play: https://play.google.com/store/apps/details?id=com.tritle.getmytime
+- App Store: https://apps.apple.com/app/id6823900088
+- One link for both phones: https://tritle129-lgtm.github.io/get-my-time/get/
+- No account. No ads. Your data stays on your phone. Made by one developer in Thailand. On Google Play and the App Store.
+- The app screens are in English; the site is in English and Thai.
+
+## Sand (free) and Golden Sand
+
+- Apps you can limit: Sand 2; Golden Sand 10
+- Daily limit for each app: Sand up to 2 hours; Golden Sand up to 4 hours
+- A 10-second pause before a limited app opens: Sand yes; Golden Sand yes
+- Time is up at your limit, until midnight: Sand yes; Golden Sand yes
+- Your time shown as money and days of your year: Sand yes; Golden Sand yes
+- Share your progress: Sand yes; Golden Sand yes
+- My progress: Sand last 7 days; Golden Sand all days
+- Why you open apps: Sand a count; Golden Sand every reason
+- Badges and streak: Sand some; Golden Sand all
+- Block an app for hours or on a schedule: Sand -; Golden Sand yes
+- Break reminder: Sand -; Golden Sand yes
+- Export your data (CSV and PDF): Sand -; Golden Sand yes
+
+## Prices (Thai baht; a store may show another currency)
+
+- Sand: Free
+- Golden Sand, Monthly: ฿39 a month (฿49 on iPhone)
+- Golden Sand, Yearly: ฿399 a year
+- Golden Sand, Forever: ฿9,900 once (Android only)
+
+## Questions answered
+
+- [Get your evenings back.](https://tritle129-lgtm.github.io/get-my-time/): Lost another hour to the scroll? GMT gives you a 10-second pause, shows what the time costs, and stops the app at your limit.
+- [How to stop doom scrolling](https://tritle129-lgtm.github.io/get-my-time/how-to-stop-doom-scrolling/): To stop doom scrolling, add a small pause before you open the feed and set a clear end to your time. You do not need strong willpower. You need a gentle stop in the way.
+- [Where does my phone time go?](https://tritle129-lgtm.github.io/get-my-time/where-does-my-phone-time-go/): The fastest way to learn where your phone time goes is to look at one full day, app by app. Most of it goes into just two or three apps.
+- [An app to limit TikTok, Instagram and YouTube](https://tritle129-lgtm.github.io/get-my-time/app-to-limit-tiktok/): Yes, Get My Time is an app that limits the time you spend on TikTok, Instagram, YouTube, Facebook and other apps you pick. You set a daily limit, and the app stops at that limit.
+- [How to stop scrolling at night](https://tritle129-lgtm.github.io/get-my-time/stop-scrolling-at-night/): To stop scrolling at night, pick a stop time and make the feed harder to reach in bed. A small habit change does most of the work.
+- [How to use your phone less](https://tritle129-lgtm.github.io/get-my-time/use-your-phone-less/): To use your phone less, start with one app and add one small stop to it. Small, steady changes last longer than big rules.
+- [An app blocker for Android and iPhone](https://tritle129-lgtm.github.io/get-my-time/app-blocker-android-iphone/): Get My Time is an app for Android and iPhone that limits the apps you pick, and with Golden Sand it can also block an app. It starts with a calm 10-second pause, not a hard lock.
+- [Is there something better than the phone's own screen time tools?](https://tritle129-lgtm.github.io/get-my-time/more-than-screen-time-minutes/): Your phone's own tools are good at one thing: they show how many minutes you spent. Get My Time adds three more things: a pause, the cost of your time, and a stop.
+
+## Thai (ภาษาไทย)
+
+> Get My Time (GMT) คือแอปบน Android และ iPhone ที่เริ่มใช้ได้ฟรี ช่วยให้ไถฟีดน้อยลง: พักหายใจ 10 วินาทีก่อนเปิดแอปที่จำกัดไว้ แสดงเวลาหน้าจอเป็นเงินและเป็นวันในปีของคุณ และหยุดแอปเมื่อครบเวลาต่อวันจนถึงเที่ยงคืน ไม่ต้องสมัครบัญชี ข้อมูลอยู่ในมือถือของคุณ
+
+- [เอาเวลาตอนเย็นของคุณคืนมา](https://tritle129-lgtm.github.io/get-my-time/th/)
+- [วิธีเลิกไถฟีด ทำยังไงให้เลิกไถมือถือ](https://tritle129-lgtm.github.io/get-my-time/th/how-to-stop-doom-scrolling/)
+- [เวลาหน้าจอหายไปไหน ดูเวลาเล่นมือถือยังไง](https://tritle129-lgtm.github.io/get-my-time/th/where-does-my-phone-time-go/)
+- [แอปจำกัดเวลาเล่น TikTok, Instagram และ YouTube](https://tritle129-lgtm.github.io/get-my-time/th/app-to-limit-tiktok/)
+- [เลิกเล่นมือถือก่อนนอน ทำยังไง](https://tritle129-lgtm.github.io/get-my-time/th/stop-scrolling-at-night/)
+- [ลดเวลาเล่นมือถือ ทำยังไงดี](https://tritle129-lgtm.github.io/get-my-time/th/use-your-phone-less/)
+- [แอปล็อกแอป แอปบล็อกแอป สำหรับ Android และ iPhone](https://tritle129-lgtm.github.io/get-my-time/th/app-blocker-android-iphone/)
+- [มีอะไรที่ดีกว่าตัวเช็กเวลาหน้าจอในมือถือไหม](https://tritle129-lgtm.github.io/get-my-time/th/more-than-screen-time-minutes/)
+
+## Optional
+
+- [Support](https://tritle129-lgtm.github.io/get-my-time/support.html)
+- [Privacy policy](https://tritle129-lgtm.github.io/get-my-time/privacy.html)
+- [Terms of Use](https://tritle129-lgtm.github.io/get-my-time/terms.html)

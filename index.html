@@ -3,44 +3,153 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Get My Time</title>
-<meta name="description" content="Get My Time (GMT): see what your scrolling costs and take your time back. iPhone and Android.">
-<style>
-  :root {
-    --bg: #ffffff; --text: #1d1d1f; --muted: #5f6368; --line: #e3e3e6; --accent: #1a7f5a; --box: #f3f7f5;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root { --bg: #121314; --text: #ececee; --muted: #a2a5ab; --line: #2c2e31; --accent: #5fd0a2; --box: #1b2420; }
-  }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0; background: var(--bg); color: var(--text);
-    font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-  }
-  main { max-width: 680px; margin: 0 auto; padding: 32px 16px 64px; }
-  h1 { font-size: 1.7rem; line-height: 1.25; margin: 0 0 4px; }
-  h2 { font-size: 1.15rem; margin: 32px 0 8px; }
-  p, ul { margin: 0 0 12px; }
-  ul { padding-left: 22px; }
-  li { margin-bottom: 6px; }
-  .date { color: var(--muted); margin-bottom: 24px; }
-  .short { background: var(--box); border-left: 4px solid var(--accent); border-radius: 8px; padding: 14px 16px; }
-  .short p:last-child { margin-bottom: 0; }
-  a { color: var(--accent); }
-  footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.9rem; }
+<title>Get My Time: scroll less, get your evenings back</title>
+<meta name="description" content="Get My Time helps you scroll less. A 10-second pause, your time as money and days, and a stop at your limit. Free to start, no account.">
+<link rel="canonical" href="https://tritle129-lgtm.github.io/get-my-time/">
+<link rel="alternate" hreflang="en" href="https://tritle129-lgtm.github.io/get-my-time/">
+<link rel="alternate" hreflang="th" href="https://tritle129-lgtm.github.io/get-my-time/th/">
+<link rel="alternate" hreflang="x-default" href="https://tritle129-lgtm.github.io/get-my-time/">
+<link rel="icon" href="get/icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Get My Time">
+<meta property="og:title" content="Get My Time: scroll less, get your evenings back">
+<meta property="og:description" content="Get My Time helps you scroll less. A 10-second pause, your time as money and days, and a stop at your limit. Free to start, no account.">
+<meta property="og:url" content="https://tritle129-lgtm.github.io/get-my-time/">
+<meta property="og:image" content="https://tritle129-lgtm.github.io/get-my-time/get/icon.png">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"MobileApplication","name":"Get My Time","alternateName":"GMT","description":"Get My Time (GMT) is a free-to-start app for Android and iPhone that helps you scroll less: it adds a 10-second pause before a limited app opens, shows your screen time as money and days of your year, and stops the app at your daily limit until midnight. No account is needed and your data stays on your phone.","operatingSystem":"Android, iOS","applicationCategory":"LifestyleApplication","inLanguage":"en","url":"https://tritle129-lgtm.github.io/get-my-time/","image":"https://tritle129-lgtm.github.io/get-my-time/get/icon.png","installUrl":["https://play.google.com/store/apps/details?id=com.tritle.getmytime","https://apps.apple.com/app/id6823900088"],"sameAs":["https://play.google.com/store/apps/details?id=com.tritle.getmytime","https://apps.apple.com/app/id6823900088"],"offers":[{"@type":"Offer","name":"Sand","price":"0","priceCurrency":"THB"},{"@type":"Offer","name":"Golden Sand, Monthly","price":"39","priceCurrency":"THB"},{"@type":"Offer","name":"Golden Sand, Yearly","price":"399","priceCurrency":"THB"},{"@type":"Offer","name":"Golden Sand, Forever","price":"9900","priceCurrency":"THB"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Get My Time","url":"https://tritle129-lgtm.github.io/get-my-time/","inLanguage":"en"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"en","mainEntity":[{"@type":"Question","name":"Is Get My Time free?","acceptedAnswer":{"@type":"Answer","text":"It is free to start. Sand (free) lets you limit 2 apps, with the pause, Time is up and the cost of your time. Golden Sand is a paid upgrade with more help."}},{"@type":"Question","name":"Do I need an account?","acceptedAnswer":{"@type":"Answer","text":"No. There is no sign-up and no login. You open the app and set your first limit."}},{"@type":"Question","name":"Does it work on Android and iPhone?","acceptedAnswer":{"@type":"Answer","text":"Yes. It is the same app on both phones, with the same screens and words. A few steps differ only where Android or Apple require it."}},{"@type":"Question","name":"Is the app in Thai?","acceptedAnswer":{"@type":"Answer","text":"Not yet. The app screens are English only for now, and this website is in Thai and English."}},{"@type":"Question","name":"Is it parental control?","acceptedAnswer":{"@type":"Answer","text":"No. GMT is for adults who want to scroll less on their own phone. It is not made to control another person's phone."}},{"@type":"Question","name":"How is it different from my phone's own tools?","acceptedAnswer":{"@type":"Answer","text":"Those tools show minutes on a chart. GMT also pauses you before the app opens, shows what the time costs in money and days, and stops the app at your limit."}},{"@type":"Question","name":"What happens when I reach my limit?","acceptedAnswer":{"@type":"Answer","text":"A Time is up screen appears and the app stays closed until midnight. After midnight it opens again."}},{"@type":"Question","name":"Where is my data?","acceptedAnswer":{"@type":"Answer","text":"On your phone. GMT needs no account, and it sends nothing out."}}]}</script>
+<style>:root{--bg:#FFF8F1;--card:#F7EBDD;--line:#E3CAAE;--text:#2B2023;--muted:#6B5A50;--button:#0E7C86;--on-button:#fff;--link:#0E7C86}
+@media (prefers-color-scheme:dark){:root{--bg:#1E1719;--card:#2B2023;--line:#4a3c36;--text:#F7EBDD;--muted:#C9B6A6;--button:#16A9B5;--on-button:#1E1719;--link:#5EE3D6}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:17px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans Thai","Leelawadee UI",sans-serif}
+.top{max-width:720px;margin:0 auto;padding:14px 16px;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.brand{display:flex;align-items:center;gap:8px;font-weight:700;color:var(--text);text-decoration:none}
+.brand img{border-radius:7px}
+.lang{color:var(--link)}
+main{max-width:720px;margin:0 auto;padding:8px 16px 48px}
+h1{font-size:2rem;line-height:1.2;margin:16px 0 12px}
+h2{font-size:1.3rem;line-height:1.3;margin:36px 0 10px}
+h3{font-size:1.05rem;margin:20px 0 4px}
+p,ul{margin:0 0 12px}
+ul{padding-left:22px}
+li{margin-bottom:6px}
+a{color:var(--link)}
+.hero{text-align:center;padding:12px 0 8px}
+.hg{display:block;margin:0 auto;width:160px;height:160px}
+.hero h1{font-size:2.3rem}
+.lead{font-size:1.15rem}
+.answer{font-weight:500}
+.small{color:var(--muted);font-size:.92rem}
+.button{display:inline-block;background:var(--button);color:var(--on-button);font-weight:600;text-decoration:none;padding:14px 28px;border-radius:14px;margin:8px 0}
+.box{background:var(--card);border-radius:18px;padding:4px 20px 12px;margin-top:36px}
+.box h2{margin-top:18px}
+.scroll{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:.95rem}
+th,td{text-align:left;padding:8px 6px;border-bottom:1px solid var(--line);vertical-align:top}
+th:not(:first-child),td:not(:first-child){text-align:center;width:22%}
+.plain{list-style:none;padding:0}
+.more ul{padding-left:20px}
+footer{max-width:720px;margin:0 auto;padding:16px 16px 40px;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
+footer p{margin:4px 0}
+footer a{color:inherit}
 </style>
 </head>
 <body>
+<header class="top"><a class="brand" href=""><img src="get/icon.png" alt="" width="28" height="28">Get My Time</a><a class="lang" hreflang="th" lang="th" href="th/">ภาษาไทย</a></header>
 <main>
-  <h1>Get My Time</h1>
-  <p class="date">See what your scrolling costs. Take your time back.</p>
-  <p>Get My Time (GMT) is a simple app for iPhone and Android. Pick the apps that eat your day. Each gets a daily
-    limit, a short pause before it opens, and a Time is up screen at your limit. GMT shows the cost of your time in
-    money and in days a year. No account, no ads, your data stays on your phone.</p>
-  <p><strong><a href="get/">Get the app</a></strong></p>
-  <p><a href="support.html">Support</a> · <a href="privacy.html">Privacy policy</a> · <a href="terms.html">Terms of Use</a></p>
-
-  <footer>Get My Time · Android and iPhone app · com.tritle.getmytime</footer>
+<section class="hero">
+<img class="hg" src="img/hg_calm.png" alt="" width="160" height="160">
+<h1>Get your evenings back.</h1>
+<p class="lead">Lost another hour to the scroll? GMT gives you a 10-second pause, shows what the time costs, and stops the app at your limit.</p>
+<p><a class="button" href="get/">Get the app</a></p>
+<p class="small">Free to start. No account. Your data stays on your phone.</p>
+</section>
+<section>
+<h2>Where did my evening go?</h2>
+<p>You sit down for one minute. Then an hour is gone. You know the feeling.</p>
+<p>Maybe it sounds like one of these:</p>
+<ul><li>Where did my evening go?</li><li>I'm tired, but I keep scrolling in bed.</li><li>So much in my head. I can't focus.</li><li>We're together, but we're both on our phones.</li></ul>
+</section>
+<section>
+<h2>Your time, back</h2>
+<p>Picture the evening as yours again. Read the book. Call your mom. Start the plan.</p>
+<p>More evenings with the people you love. Close the app. Go to bed. Less feed, more room to think.</p>
+<p>And you can see it: GMT shows the time you took back.</p>
+</section>
+<section>
+<h2>How GMT helps</h2>
+<p>Three small things, all on your phone. No lecture. You stay in charge.</p>
+<ul><li>A 10-second pause before a limited app opens. Breathe, then choose.</li><li>Your time shown as money and as days of your year.</li><li>Time is up at your daily limit. The app opens again after midnight.</li></ul>
+</section>
+<section>
+<h2>Easy to trust</h2>
+<p>Free to start. No account. No ads. Your data stays on your phone.</p>
+</section>
+<section class="box">
+<h2>In one sentence</h2>
+<p>Get My Time (GMT) is a free-to-start app for Android and iPhone that helps you scroll less: it adds a 10-second pause before a limited app opens, shows your screen time as money and days of your year, and stops the app at your daily limit until midnight. No account is needed and your data stays on your phone.</p>
+</section>
+<section>
+<h2>What you get</h2>
+<div class="scroll"><table><thead><tr><th></th><th>Sand (free)</th><th>Golden Sand</th></tr></thead><tbody>
+<tr><td>Apps you can limit</td><td>2</td><td>10</td></tr>
+<tr><td>Daily limit for each app</td><td>up to 2 hours</td><td>up to 4 hours</td></tr>
+<tr><td>A 10-second pause before a limited app opens</td><td>yes</td><td>yes</td></tr>
+<tr><td>Time is up at your limit, until midnight</td><td>yes</td><td>yes</td></tr>
+<tr><td>Your time shown as money and days of your year</td><td>yes</td><td>yes</td></tr>
+<tr><td>Share your progress</td><td>yes</td><td>yes</td></tr>
+<tr><td>My progress</td><td>last 7 days</td><td>all days</td></tr>
+<tr><td>Why you open apps</td><td>a count</td><td>every reason</td></tr>
+<tr><td>Badges and streak</td><td>some</td><td>all</td></tr>
+<tr><td>Block an app for hours or on a schedule</td><td>-</td><td>yes</td></tr>
+<tr><td>Break reminder</td><td>-</td><td>yes</td></tr>
+<tr><td>Export your data (CSV and PDF)</td><td>-</td><td>yes</td></tr>
+</tbody></table></div>
+<h2>Prices</h2>
+<ul class="plain">
+<li><strong>Sand</strong>: Free</li>
+<li><strong>Golden Sand, Monthly</strong>: ฿39 a month (฿49 on iPhone)</li>
+<li><strong>Golden Sand, Yearly</strong>: ฿399 a year</li>
+<li><strong>Golden Sand, Forever</strong>: ฿9,900 once (Android only)</li>
+</ul>
+<p class="small">Prices are in Thai baht. Your store may show another currency or price.</p>
+</section>
+<section>
+<h2>Common questions</h2>
+<h3>Is Get My Time free?</h3>
+<p>It is free to start. Sand (free) lets you limit 2 apps, with the pause, Time is up and the cost of your time. Golden Sand is a paid upgrade with more help.</p>
+<h3>Do I need an account?</h3>
+<p>No. There is no sign-up and no login. You open the app and set your first limit.</p>
+<h3>Does it work on Android and iPhone?</h3>
+<p>Yes. It is the same app on both phones, with the same screens and words. A few steps differ only where Android or Apple require it.</p>
+<h3>Is the app in Thai?</h3>
+<p>Not yet. The app screens are English only for now, and this website is in Thai and English.</p>
+<h3>Is it parental control?</h3>
+<p>No. GMT is for adults who want to scroll less on their own phone. It is not made to control another person's phone.</p>
+<h3>How is it different from my phone's own tools?</h3>
+<p>Those tools show minutes on a chart. GMT also pauses you before the app opens, shows what the time costs in money and days, and stops the app at your limit.</p>
+<h3>What happens when I reach my limit?</h3>
+<p>A Time is up screen appears and the app stays closed until midnight. After midnight it opens again.</p>
+<h3>Where is my data?</h3>
+<p>On your phone. GMT needs no account, and it sends nothing out.</p>
+</section>
+<nav class="more">
+<h2>More questions people ask</h2>
+<ul>
+<li><a href="how-to-stop-doom-scrolling/">How to stop doom scrolling</a></li>
+<li><a href="where-does-my-phone-time-go/">Where does my phone time go?</a></li>
+<li><a href="app-to-limit-tiktok/">An app to limit TikTok, Instagram and YouTube</a></li>
+<li><a href="stop-scrolling-at-night/">How to stop scrolling at night</a></li>
+<li><a href="use-your-phone-less/">How to use your phone less</a></li>
+<li><a href="app-blocker-android-iphone/">An app blocker for Android and iPhone</a></li>
+<li><a href="more-than-screen-time-minutes/">Is there something better than the phone's own screen time tools?</a></li>
+</ul>
+<p><a class="button" href="get/">Get the app</a></p>
+</nav>
 </main>
+<footer><p>Made by one developer in Thailand.</p><p><a href="">Get My Time</a> · <a href="support.html">Support</a> · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a></p></footer>
 </body>
 </html>
