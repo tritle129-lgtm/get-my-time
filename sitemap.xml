@@ -96,6 +96,30 @@
     <xhtml:link rel="alternate" hreflang="th" href="https://tritle129-lgtm.github.io/get-my-time/th/more-than-screen-time-minutes/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://tritle129-lgtm.github.io/get-my-time/more-than-screen-time-minutes/"/>
   </url>
+  <url>
+    <loc>https://tritle129-lgtm.github.io/get-my-time/blog/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tritle129-lgtm.github.io/get-my-time/blog/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://tritle129-lgtm.github.io/get-my-time/th/blog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tritle129-lgtm.github.io/get-my-time/blog/"/>
+  </url>
+  <url>
+    <loc>https://tritle129-lgtm.github.io/get-my-time/th/blog/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tritle129-lgtm.github.io/get-my-time/blog/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://tritle129-lgtm.github.io/get-my-time/th/blog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tritle129-lgtm.github.io/get-my-time/blog/"/>
+  </url>
+  <url>
+    <loc>https://tritle129-lgtm.github.io/get-my-time/blog/take-back-the-last-6-weeks-of-the-year/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tritle129-lgtm.github.io/get-my-time/blog/take-back-the-last-6-weeks-of-the-year/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://tritle129-lgtm.github.io/get-my-time/th/blog/take-back-the-last-6-weeks-of-the-year/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tritle129-lgtm.github.io/get-my-time/blog/take-back-the-last-6-weeks-of-the-year/"/>
+  </url>
+  <url>
+    <loc>https://tritle129-lgtm.github.io/get-my-time/th/blog/take-back-the-last-6-weeks-of-the-year/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tritle129-lgtm.github.io/get-my-time/blog/take-back-the-last-6-weeks-of-the-year/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://tritle129-lgtm.github.io/get-my-time/th/blog/take-back-the-last-6-weeks-of-the-year/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tritle129-lgtm.github.io/get-my-time/blog/take-back-the-last-6-weeks-of-the-year/"/>
+  </url>
   <url><loc>https://tritle129-lgtm.github.io/get-my-time/get/</loc></url>
   <url><loc>https://tritle129-lgtm.github.io/get-my-time/support.html</loc></url>
   <url><loc>https://tritle129-lgtm.github.io/get-my-time/privacy.html</loc></url>
