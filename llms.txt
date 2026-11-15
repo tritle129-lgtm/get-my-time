@@ -47,6 +47,7 @@
 - [Black Friday scroll: how to shop less on your phone](https://tritle129-lgtm.github.io/get-my-time/blog/black-friday-scroll-shop-less-on-your-phone/): Sale apps are built like feeds. Timers, low stock and a full cart keep you looking. A pause before you open and a daily limit give the choice back to you.
 - [How to put your phone down at the dinner table](https://tritle129-lgtm.github.io/get-my-time/blog/put-your-phone-down-at-the-dinner-table/): Make the table a place where the phone does not sit. Pick one or two small rules, say them kindly, and give the people your eyes. A short pause before apps open can help you remember.
 - [Exam week: keep your phone from eating study time](https://tritle129-lgtm.github.io/get-my-time/blog/exam-week-keep-your-phone-from-eating-study-time/): Put the phone out of reach, study in short blocks, and use the phone only as a break. Set your app limits before exam week starts, so the choice is already made.
+- [A gift for your people: your full attention](https://tritle129-lgtm.github.io/get-my-time/blog/a-gift-for-your-people-your-full-attention/): Give them your full attention. Put your phone away for one hour, look at them, and listen. It costs nothing, and many people remember it longer than a thing you can buy.
 
 ## Thai (ภาษาไทย)
 
@@ -65,6 +66,7 @@
 - [ไถช้อปช่วงเซล: ช้อปให้น้อยลงบนมือถือ](https://tritle129-lgtm.github.io/get-my-time/th/blog/black-friday-scroll-shop-less-on-your-phone/)
 - [วางมือถือลงบนโต๊ะอาหารยังไงดี](https://tritle129-lgtm.github.io/get-my-time/th/blog/put-your-phone-down-at-the-dinner-table/)
 - [สัปดาห์สอบ: อย่าให้มือถือกินเวลาอ่านหนังสือ](https://tritle129-lgtm.github.io/get-my-time/th/blog/exam-week-keep-your-phone-from-eating-study-time/)
+- [ของขวัญให้คนที่รัก: ความใส่ใจเต็มที่ของคุณ](https://tritle129-lgtm.github.io/get-my-time/th/blog/a-gift-for-your-people-your-full-attention/)
 
 ## Optional
 
