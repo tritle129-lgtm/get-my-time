@@ -44,6 +44,7 @@
 
 - [Get your time back](https://tritle129-lgtm.github.io/get-my-time/blog/): Short posts, a new one every week. Each one gives you one small step you can try today.
 - [Take back the last 6 weeks of the year](https://tritle129-lgtm.github.io/get-my-time/blog/take-back-the-last-6-weeks-of-the-year/): Yes, you can. Six weeks is enough to change one phone habit. Pick one app, add a pause and a limit, and see what you get back.
+- [Black Friday scroll: how to shop less on your phone](https://tritle129-lgtm.github.io/get-my-time/blog/black-friday-scroll-shop-less-on-your-phone/): Sale apps are built like feeds. Timers, low stock and a full cart keep you looking. A pause before you open and a daily limit give the choice back to you.
 
 ## Thai (ภาษาไทย)
 
@@ -59,6 +60,7 @@
 - [มีอะไรที่ดีกว่าตัวเช็กเวลาหน้าจอในมือถือไหม](https://tritle129-lgtm.github.io/get-my-time/th/more-than-screen-time-minutes/)
 - [เอาเวลาของคุณกลับมา](https://tritle129-lgtm.github.io/get-my-time/th/blog/)
 - [เอา 6 สัปดาห์สุดท้ายของปีกลับมา](https://tritle129-lgtm.github.io/get-my-time/th/blog/take-back-the-last-6-weeks-of-the-year/)
+- [ไถช้อปช่วงเซล: ช้อปให้น้อยลงบนมือถือ](https://tritle129-lgtm.github.io/get-my-time/th/blog/black-friday-scroll-shop-less-on-your-phone/)
 
 ## Optional
 
