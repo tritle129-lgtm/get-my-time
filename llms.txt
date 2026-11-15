@@ -50,6 +50,7 @@
 - [A gift for your people: your full attention](https://tritle129-lgtm.github.io/get-my-time/blog/a-gift-for-your-people-your-full-attention/): Give them your full attention. Put your phone away for one hour, look at them, and listen. It costs nothing, and many people remember it longer than a thing you can buy.
 - [Your phone on a holiday trip: how to look up](https://tritle129-lgtm.github.io/get-my-time/blog/your-phone-on-a-holiday-trip-how-to-look-up/): Pick a few moments to enjoy with your eyes only. Take a few photos, then put the phone away. Post later, not right now. You will remember more of the view.
 - [New Year goal: scroll less, how to make it stick](https://tritle129-lgtm.github.io/get-my-time/blog/new-year-goal-scroll-less-make-it-stick/): Make the goal tiny and clear. Decide the hard moment ahead of time. Set your limits once, and if you slip, start again tomorrow.
+- [What is 1 hour a day? More than 15 days a year](https://tritle129-lgtm.github.io/get-my-time/blog/what-is-1-hour-a-day-more-than-15-days-a-year/): One hour a day adds up to 365 hours a year. That is more than 15 days. To find your own number, take your daily hours, multiply by 365, then divide by 24.
 
 ## Thai (ภาษาไทย)
 
@@ -71,6 +72,7 @@
 - [ของขวัญให้คนที่รัก: ความใส่ใจเต็มที่ของคุณ](https://tritle129-lgtm.github.io/get-my-time/th/blog/a-gift-for-your-people-your-full-attention/)
 - [มือถือตอนไปเที่ยว: ทำอย่างไรให้เงยหน้าดูวิว](https://tritle129-lgtm.github.io/get-my-time/th/blog/your-phone-on-a-holiday-trip-how-to-look-up/)
 - [เป้าหมายปีใหม่: ไถให้น้อยลง ทำอย่างไรให้ทำได้ต่อ](https://tritle129-lgtm.github.io/get-my-time/th/blog/new-year-goal-scroll-less-make-it-stick/)
+- [วันละ 1 ชั่วโมงคือเท่าไร มากกว่า 15 วันต่อปี](https://tritle129-lgtm.github.io/get-my-time/th/blog/what-is-1-hour-a-day-more-than-15-days-a-year/)
 
 ## Optional
 
