@@ -40,6 +40,11 @@
 - [An app blocker for Android and iPhone](https://tritle129-lgtm.github.io/get-my-time/app-blocker-android-iphone/): Get My Time is an app for Android and iPhone that limits the apps you pick, and with Golden Sand it can also block an app. It starts with a calm 10-second pause, not a hard lock.
 - [Is there something better than the phone's own screen time tools?](https://tritle129-lgtm.github.io/get-my-time/more-than-screen-time-minutes/): Your phone's own tools are good at one thing: they show how many minutes you spent. Get My Time adds three more things: a pause, the cost of your time, and a stop.
 
+## Blog (a short post every week)
+
+- [Get your time back](https://tritle129-lgtm.github.io/get-my-time/blog/): Short posts, a new one every week. Each one gives you one small step you can try today.
+- [Take back the last 6 weeks of the year](https://tritle129-lgtm.github.io/get-my-time/blog/take-back-the-last-6-weeks-of-the-year/): Yes, you can. Six weeks is enough to change one phone habit. Pick one app, add a pause and a limit, and see what you get back.
+
 ## Thai (ภาษาไทย)
 
 > Get My Time (GMT) คือแอปบน Android และ iPhone ที่เริ่มใช้ได้ฟรี ช่วยให้ไถฟีดน้อยลง: พักหายใจ 10 วินาทีก่อนเปิดแอปที่จำกัดไว้ แสดงเวลาหน้าจอเป็นเงินและเป็นวันในปีของคุณ และหยุดแอปเมื่อครบเวลาต่อวันจนถึงเที่ยงคืน ไม่ต้องสมัครบัญชี ข้อมูลอยู่ในมือถือของคุณ
@@ -52,6 +57,8 @@
 - [ลดเวลาเล่นมือถือ ทำยังไงดี](https://tritle129-lgtm.github.io/get-my-time/th/use-your-phone-less/)
 - [แอปล็อกแอป แอปบล็อกแอป สำหรับ Android และ iPhone](https://tritle129-lgtm.github.io/get-my-time/th/app-blocker-android-iphone/)
 - [มีอะไรที่ดีกว่าตัวเช็กเวลาหน้าจอในมือถือไหม](https://tritle129-lgtm.github.io/get-my-time/th/more-than-screen-time-minutes/)
+- [เอาเวลาของคุณกลับมา](https://tritle129-lgtm.github.io/get-my-time/th/blog/)
+- [เอา 6 สัปดาห์สุดท้ายของปีกลับมา](https://tritle129-lgtm.github.io/get-my-time/th/blog/take-back-the-last-6-weeks-of-the-year/)
 
 ## Optional
 
