@@ -45,9 +45,9 @@ a{color:var(--link)}
 .top .pill,.lang{white-space:nowrap;flex-shrink:0}
 .top .nav{color:var(--text);text-decoration:none;font-weight:600;font-size:.95rem;white-space:nowrap;padding:6px 2px;min-height:30px;display:inline-flex;align-items:center;border-bottom:2px solid transparent}
 .top .nav[aria-current]{font-weight:700;border-bottom-color:currentColor}
-@media(max-width:399px){.top .bt{display:none}}
+@media(max-width:520px){.top .bt{display:none}}
 .fromblog ul{padding-left:20px}.fromblog li{margin:6px 0}.fromblog .all{font-weight:600;text-decoration:none}
-.brand{min-width:0;white-space:nowrap}
+.brand{min-width:0;white-space:nowrap;overflow:hidden;flex-shrink:0}
 @media(max-width:359px){.bt{display:none}}
 h1{font-size:clamp(2.7rem,10vw,6.2rem);line-height:1.02;letter-spacing:-.035em;font-weight:800;margin:0 0 20px}
 h2{font-size:clamp(2.1rem,6.5vw,4rem);line-height:1.08;letter-spacing:-.03em;font-weight:800;margin:0 0 20px}
@@ -146,6 +146,11 @@ footer p{margin:4px 0}footer a{color:inherit}
 .posts .pt{font-size:clamp(1.3rem,3.5vw,1.7rem);font-weight:700;line-height:1.3;color:var(--text);text-decoration:none}
 .posts .pt:hover{color:var(--link)}
 .posts p{margin:6px 0 0}
+.chips{display:none;flex-wrap:wrap;gap:8px;margin:0 0 16px}.js .chips{display:flex}
+.chip{display:inline-flex;align-items:center;min-height:48px;padding:0 18px;border:0;border-radius:99px;background:var(--card);box-shadow:inset 0 0 0 1px var(--line);color:var(--text);font-family:inherit;font-size:1rem;font-weight:600;line-height:1.35;text-decoration:none;cursor:pointer}
+.chip[aria-pressed=true]{background:var(--button);color:var(--on-button);box-shadow:none}.chip[aria-pressed=true]::before{content:"✓";margin-right:6px}
+.tcount{color:var(--muted);margin:0 0 8px}.posts li[hidden]{display:none}
+.topics{display:flex;flex-wrap:wrap;align-items:center;gap:8px;color:var(--muted)}
 .photo{margin:0 0 22px}
 .photo img{display:block;width:100%;height:auto;border-radius:28px;background:var(--card)}
 .photo figcaption{color:var(--muted);font-size:.75rem;margin-top:8px}.photo figcaption a{color:inherit}
@@ -158,22 +163,29 @@ html{scroll-behavior:auto}
 </style>
 </head>
 <body>
-<header class="top"><div class="wrap"><a class="brand" href="../"><img src="../get/icon.png" alt="" width="28" height="28"><span class="bt">Get My Time</span></a><div class="right"><a class="nav" href="../blog/" aria-current="page">Blog</a><nav class="lang" aria-label="Language"><span lang="en" aria-current="page">EN</span><a lang="th" hreflang="th" href="../th/blog/">ไทย</a></nav><a class="pill" href="../get/?s=blog">Get the app</a></div></div></header>
+<header class="top"><div class="wrap"><a class="brand" href="../" aria-label="Get My Time"><img src="../get/icon.png" alt="" width="28" height="28"><span class="bt">Get My Time</span></a><div class="right"><a class="nav" href="../blog/" aria-current="page">Blog</a><nav class="lang" aria-label="Language"><span lang="en" aria-current="page">EN</span><a lang="th" hreflang="th" href="../th/blog/">ไทย</a></nav><a class="pill" href="../get/?s=blog">Get the app</a></div></div></header>
 <main id="top">
 <article class="q"><div class="wrap narrow">
 <section class="qtop">
 <h1>Get your time back</h1>
 <p class="answer">Short posts, a new one every week. Each one gives you one small step you can try today.</p>
+<div class="chips" role="group" aria-label="Topics" data-one="1 post" data-n="%n posts"><button type="button" class="chip" data-t="" aria-pressed="true" hidden>All</button>
+<button type="button" class="chip" data-t="family" aria-pressed="false" hidden>Family and friends</button>
+<button type="button" class="chip" data-t="money" aria-pressed="false" hidden>Money and numbers</button>
+<button type="button" class="chip" data-t="study" aria-pressed="false" hidden>Study and goals</button>
+<button type="button" class="chip" data-t="habits" aria-pressed="false" hidden>Daily habits</button>
+</div>
 </section>
-<section class="pt0"><ul class="posts">
-<li><a class="pt" href="../blog/take-back-the-last-6-weeks-of-the-year/">Take back the last 6 weeks of the year</a><p class="small"><time datetime="2026-11-15">15 Nov 2026</time> · 3 min read</p><p>Six weeks are left in the year. Here is a simple way to spend them on the people and things you love, not on the scroll.</p></li>
-<li><a class="pt" href="../blog/black-friday-scroll-shop-less-on-your-phone/">Black Friday scroll: how to shop less on your phone</a><p class="small"><time datetime="2026-11-15">15 Nov 2026</time> · 3 min read</p><p>Sale timers and flash deals pull like a feed. Here are small, easy ways to shop less on your phone and keep your evening.</p></li>
-<li><a class="pt" href="../blog/put-your-phone-down-at-the-dinner-table/">How to put your phone down at the dinner table</a><p class="small"><time datetime="2026-11-15">15 Nov 2026</time> · 3 min read</p><p>Holiday dinners are rare time with your people. Here are small, kind ways to put your phone down and be there for the meal.</p></li>
-<li><a class="pt" href="../blog/exam-week-keep-your-phone-from-eating-study-time/">Exam week: keep your phone from eating study time</a><p class="small"><time datetime="2026-11-15">15 Nov 2026</time> · 3 min read</p><p>Finals are close. Here are small, easy ways to study without checking your phone every few minutes, and keep your focus.</p></li>
-<li><a class="pt" href="../blog/a-gift-for-your-people-your-full-attention/">A gift for your people: your full attention</a><p class="small"><time datetime="2026-11-15">15 Nov 2026</time> · 3 min read</p><p>Looking for a gift that costs nothing? Give your full attention. Easy ways to put the phone down and be there for the people you love.</p></li>
-<li><a class="pt" href="../blog/your-phone-on-a-holiday-trip-how-to-look-up/">Your phone on a holiday trip: how to look up</a><p class="small"><time datetime="2026-11-15">15 Nov 2026</time> · 3 min read</p><p>How do you enjoy a trip, not film it? Easy ways to see the view, take a few photos, and post later, so the holiday stays in your eyes.</p></li>
-<li><a class="pt" href="../blog/new-year-goal-scroll-less-make-it-stick/">New Year goal: scroll less, how to make it stick</a><p class="small"><time datetime="2026-11-15">15 Nov 2026</time> · 3 min read</p><p>Why do goals fade by February? Small, clear ways to scroll less in the new year, and to keep going even after a bad day.</p></li>
-<li><a class="pt" href="../blog/what-is-1-hour-a-day-more-than-15-days-a-year/">What is 1 hour a day? More than 15 days a year</a><p class="small"><time datetime="2026-11-15">15 Nov 2026</time> · 3 min read</p><p>How much of your year is your phone? A simple way to count your own hours and days, and small ideas to take some back.</p></li>
+<section class="pt0"><p class="small tcount" id="tcount" aria-live="polite" hidden></p>
+<ul class="posts">
+<li data-topics="habits family"><a class="pt" href="../blog/take-back-the-last-6-weeks-of-the-year/">Take back the last 6 weeks of the year</a><p class="small"><time datetime="2026-11-15">15 Nov 2026</time> · 3 min read</p><p>Six weeks are left in the year. Here is a simple way to spend them on the people and things you love, not on the scroll.</p></li>
+<li data-topics="money"><a class="pt" href="../blog/black-friday-scroll-shop-less-on-your-phone/">Black Friday scroll: how to shop less on your phone</a><p class="small"><time datetime="2026-11-15">15 Nov 2026</time> · 3 min read</p><p>Sale timers and flash deals pull like a feed. Here are small, easy ways to shop less on your phone and keep your evening.</p></li>
+<li data-topics="family"><a class="pt" href="../blog/put-your-phone-down-at-the-dinner-table/">How to put your phone down at the dinner table</a><p class="small"><time datetime="2026-11-15">15 Nov 2026</time> · 3 min read</p><p>Holiday dinners are rare time with your people. Here are small, kind ways to put your phone down and be there for the meal.</p></li>
+<li data-topics="study"><a class="pt" href="../blog/exam-week-keep-your-phone-from-eating-study-time/">Exam week: keep your phone from eating study time</a><p class="small"><time datetime="2026-11-15">15 Nov 2026</time> · 3 min read</p><p>Finals are close. Here are small, easy ways to study without checking your phone every few minutes, and keep your focus.</p></li>
+<li data-topics="family"><a class="pt" href="../blog/a-gift-for-your-people-your-full-attention/">A gift for your people: your full attention</a><p class="small"><time datetime="2026-11-15">15 Nov 2026</time> · 3 min read</p><p>Looking for a gift that costs nothing? Give your full attention. Easy ways to put the phone down and be there for the people you love.</p></li>
+<li data-topics="family"><a class="pt" href="../blog/your-phone-on-a-holiday-trip-how-to-look-up/">Your phone on a holiday trip: how to look up</a><p class="small"><time datetime="2026-11-15">15 Nov 2026</time> · 3 min read</p><p>How do you enjoy a trip, not film it? Easy ways to see the view, take a few photos, and post later, so the holiday stays in your eyes.</p></li>
+<li data-topics="study habits"><a class="pt" href="../blog/new-year-goal-scroll-less-make-it-stick/">New Year goal: scroll less, how to make it stick</a><p class="small"><time datetime="2026-11-15">15 Nov 2026</time> · 3 min read</p><p>Why do goals fade by February? Small, clear ways to scroll less in the new year, and to keep going even after a bad day.</p></li>
+<li data-topics="money"><a class="pt" href="../blog/what-is-1-hour-a-day-more-than-15-days-a-year/">What is 1 hour a day? More than 15 days a year</a><p class="small"><time datetime="2026-11-15">15 Nov 2026</time> · 3 min read</p><p>How much of your year is your phone? A simple way to count your own hours and days, and small ideas to take some back.</p></li>
 </ul></section>
 </div></article>
 <section class="pt0"><div class="wrap narrow"><div class="box rv">
@@ -235,6 +247,18 @@ if(rm){cur=to;big.textContent=to.toFixed(1);return}
 var from=cur,t0=performance.now();
 (function f(n){var p=Math.min((n-t0)/450,1);cur=from+(to-from)*(1-Math.pow(1-p,3));big.textContent=cur.toFixed(1);if(p<1)raf=requestAnimationFrame(f)})(t0)};
 m.oninput=function(){mo.textContent=m.value;paint(m.value*365/1440)};
+}
+var C=d.querySelector('.chips');
+if(C){
+var cb=[].slice.call(C.querySelectorAll('button')),li=d.querySelectorAll('.posts li'),cn=g('tcount');
+var pick=function(t,keep){
+if(!cb.some(function(e){return e.dataset.t===t}))t='';
+var n=0;[].forEach.call(li,function(e){var on=!t||(' '+e.dataset.topics+' ').indexOf(' '+t+' ')>=0;e.hidden=!on;if(on)n++});
+cb.forEach(function(e){e.setAttribute('aria-pressed',e.dataset.t===t)});
+cn.hidden=!t;cn.textContent=n==1?C.dataset.one:C.dataset.n.replace('%n',n);
+if(keep&&history.replaceState)history.replaceState(null,'',t?'#'+t:location.pathname+location.search)};
+cb.forEach(function(e){e.hidden=false;e.onclick=function(){pick(e.dataset.t,1)}});
+var hs=function(){pick(location.hash.slice(1),0)};hs();addEventListener('hashchange',hs);
 }
 var dev=g('dev'),steps=d.querySelectorAll('.step');
 if(dev&&steps.length&&IO){

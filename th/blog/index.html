@@ -45,9 +45,9 @@ a{color:var(--link)}
 .top .pill,.lang{white-space:nowrap;flex-shrink:0}
 .top .nav{color:var(--text);text-decoration:none;font-weight:600;font-size:.95rem;white-space:nowrap;padding:6px 2px;min-height:30px;display:inline-flex;align-items:center;border-bottom:2px solid transparent}
 .top .nav[aria-current]{font-weight:700;border-bottom-color:currentColor}
-@media(max-width:399px){.top .bt{display:none}}
+@media(max-width:520px){.top .bt{display:none}}
 .fromblog ul{padding-left:20px}.fromblog li{margin:6px 0}.fromblog .all{font-weight:600;text-decoration:none}
-.brand{min-width:0;white-space:nowrap}
+.brand{min-width:0;white-space:nowrap;overflow:hidden;flex-shrink:0}
 @media(max-width:359px){.bt{display:none}}
 h1{font-size:clamp(2.7rem,10vw,6.2rem);line-height:1.02;letter-spacing:-.035em;font-weight:800;margin:0 0 20px}
 h2{font-size:clamp(2.1rem,6.5vw,4rem);line-height:1.08;letter-spacing:-.03em;font-weight:800;margin:0 0 20px}
@@ -146,6 +146,11 @@ footer p{margin:4px 0}footer a{color:inherit}
 .posts .pt{font-size:clamp(1.3rem,3.5vw,1.7rem);font-weight:700;line-height:1.3;color:var(--text);text-decoration:none}
 .posts .pt:hover{color:var(--link)}
 .posts p{margin:6px 0 0}
+.chips{display:none;flex-wrap:wrap;gap:8px;margin:0 0 16px}.js .chips{display:flex}
+.chip{display:inline-flex;align-items:center;min-height:48px;padding:0 18px;border:0;border-radius:99px;background:var(--card);box-shadow:inset 0 0 0 1px var(--line);color:var(--text);font-family:inherit;font-size:1rem;font-weight:600;line-height:1.35;text-decoration:none;cursor:pointer}
+.chip[aria-pressed=true]{background:var(--button);color:var(--on-button);box-shadow:none}.chip[aria-pressed=true]::before{content:"✓";margin-right:6px}
+.tcount{color:var(--muted);margin:0 0 8px}.posts li[hidden]{display:none}
+.topics{display:flex;flex-wrap:wrap;align-items:center;gap:8px;color:var(--muted)}
 .photo{margin:0 0 22px}
 .photo img{display:block;width:100%;height:auto;border-radius:28px;background:var(--card)}
 .photo figcaption{color:var(--muted);font-size:.75rem;margin-top:8px}.photo figcaption a{color:inherit}
@@ -158,22 +163,29 @@ html{scroll-behavior:auto}
 </style>
 </head>
 <body>
-<header class="top"><div class="wrap"><a class="brand" href="../../th/"><img src="../../get/icon.png" alt="" width="28" height="28"><span class="bt">Get My Time</span></a><div class="right"><a class="nav" href="../../th/blog/" aria-current="page">บล็อก</a><nav class="lang" aria-label="Language"><a lang="en" hreflang="en" href="../../blog/">EN</a><span lang="th" aria-current="page">ไทย</span></nav><a class="pill" href="../../get/?s=blog">โหลดแอป</a></div></div></header>
+<header class="top"><div class="wrap"><a class="brand" href="../../th/" aria-label="Get My Time"><img src="../../get/icon.png" alt="" width="28" height="28"><span class="bt">Get My Time</span></a><div class="right"><a class="nav" href="../../th/blog/" aria-current="page">บล็อก</a><nav class="lang" aria-label="Language"><a lang="en" hreflang="en" href="../../blog/">EN</a><span lang="th" aria-current="page">ไทย</span></nav><a class="pill" href="../../get/?s=blog">โหลดแอป</a></div></div></header>
 <main id="top">
 <article class="q"><div class="wrap narrow">
 <section class="qtop">
 <h1>เอาเวลาของคุณกลับมา</h1>
 <p class="answer">บทความสั้น ๆ มีเรื่องใหม่ทุกสัปดาห์ แต่ละเรื่องมีก้าวเล็ก ๆ หนึ่งก้าวให้ลองได้วันนี้</p>
+<div class="chips" role="group" aria-label="หัวข้อ" data-one="1 บทความ" data-n="%n บทความ"><button type="button" class="chip" data-t="" aria-pressed="true" hidden>ทั้งหมด</button>
+<button type="button" class="chip" data-t="family" aria-pressed="false" hidden>ครอบครัวและเพื่อน</button>
+<button type="button" class="chip" data-t="money" aria-pressed="false" hidden>เงินและตัวเลข</button>
+<button type="button" class="chip" data-t="study" aria-pressed="false" hidden>เรียนและเป้าหมาย</button>
+<button type="button" class="chip" data-t="habits" aria-pressed="false" hidden>นิสัยประจำวัน</button>
+</div>
 </section>
-<section class="pt0"><ul class="posts">
-<li><a class="pt" href="../../th/blog/take-back-the-last-6-weeks-of-the-year/">เอา 6 สัปดาห์สุดท้ายของปีกลับมา</a><p class="small"><time datetime="2026-11-15">15 พ.ย. 2569</time> · อ่าน 3 นาที</p><p>เหลืออีก 6 สัปดาห์ก็หมดปี ลองวิธีง่าย ๆ ใช้เวลานี้กับคนและสิ่งที่รัก แทนการไถฟีด</p></li>
-<li><a class="pt" href="../../th/blog/black-friday-scroll-shop-less-on-your-phone/">ไถช้อปช่วงเซล: ช้อปให้น้อยลงบนมือถือ</a><p class="small"><time datetime="2026-11-15">15 พ.ย. 2569</time> · อ่าน 3 นาที</p><p>ตัวนับเวลาและแฟลชเซลดึงเราเหมือนฟีด ลองวิธีเล็ก ๆ ง่าย ๆ ให้ช้อปน้อยลงและมีเวลาตอนเย็นกลับมา</p></li>
-<li><a class="pt" href="../../th/blog/put-your-phone-down-at-the-dinner-table/">วางมือถือลงบนโต๊ะอาหารยังไงดี</a><p class="small"><time datetime="2026-11-15">15 พ.ย. 2569</time> · อ่าน 3 นาที</p><p>มื้อค่ำช่วงวันหยุดคือเวลาหายากที่ได้อยู่กับคนที่รัก ลองวิธีเล็ก ๆ อ่อนโยน ให้วางมือถือและอยู่กับมื้อนั้นจริง ๆ</p></li>
-<li><a class="pt" href="../../th/blog/exam-week-keep-your-phone-from-eating-study-time/">สัปดาห์สอบ: อย่าให้มือถือกินเวลาอ่านหนังสือ</a><p class="small"><time datetime="2026-11-15">15 พ.ย. 2569</time> · อ่าน 3 นาที</p><p>ใกล้สอบปลายภาคแล้ว ลองวิธีเล็ก ๆ ง่าย ๆ ให้อ่านหนังสือโดยไม่ต้องหยิบมือถือขึ้นมาดูทุกไม่กี่นาที และรักษาสมาธิไว้</p></li>
-<li><a class="pt" href="../../th/blog/a-gift-for-your-people-your-full-attention/">ของขวัญให้คนที่รัก: ความใส่ใจเต็มที่ของคุณ</a><p class="small"><time datetime="2026-11-15">15 พ.ย. 2569</time> · อ่าน 3 นาที</p><p>ปีใหม่นี้ ลองให้ของขวัญที่ไม่ต้องซื้อ คือความใส่ใจเต็มที่ของคุณ วิธีง่าย ๆ ที่จะวางมือถือแล้วอยู่กับคนตรงหน้า</p></li>
-<li><a class="pt" href="../../th/blog/your-phone-on-a-holiday-trip-how-to-look-up/">มือถือตอนไปเที่ยว: ทำอย่างไรให้เงยหน้าดูวิว</a><p class="small"><time datetime="2026-11-15">15 พ.ย. 2569</time> · อ่าน 3 นาที</p><p>อยากเที่ยวให้เต็มตา ไม่ใช่เที่ยวผ่านจอ วิธีง่าย ๆ ถ่ายรูปไม่กี่ใบ เก็บมือถือ แล้วค่อยโพสต์ทีหลัง ให้ทริปช่วงหยุดยาวอยู่ในความทรงจำ</p></li>
-<li><a class="pt" href="../../th/blog/new-year-goal-scroll-less-make-it-stick/">เป้าหมายปีใหม่: ไถให้น้อยลง ทำอย่างไรให้ทำได้ต่อ</a><p class="small"><time datetime="2026-11-15">15 พ.ย. 2569</time> · อ่าน 3 นาที</p><p>ทำไมเป้าหมายปีใหม่ถึงจางไปก่อนเดือนกุมภาพันธ์ วิธีเล็ก ๆ ชัด ๆ ที่จะไถให้น้อยลง และไปต่อได้แม้มีวันที่พลาด</p></li>
-<li><a class="pt" href="../../th/blog/what-is-1-hour-a-day-more-than-15-days-a-year/">วันละ 1 ชั่วโมงคือเท่าไร มากกว่า 15 วันต่อปี</a><p class="small"><time datetime="2026-11-15">15 พ.ย. 2569</time> · อ่าน 3 นาที</p><p>มือถือใช้เวลาของปีคุณไปเท่าไร วิธีนับชั่วโมงและวันของตัวเองแบบง่าย ๆ พร้อมไอเดียเล็ก ๆ ที่จะเอาเวลากลับมา</p></li>
+<section class="pt0"><p class="small tcount" id="tcount" aria-live="polite" hidden></p>
+<ul class="posts">
+<li data-topics="habits family"><a class="pt" href="../../th/blog/take-back-the-last-6-weeks-of-the-year/">เอา 6 สัปดาห์สุดท้ายของปีกลับมา</a><p class="small"><time datetime="2026-11-15">15 พ.ย. 2569</time> · อ่าน 3 นาที</p><p>เหลืออีก 6 สัปดาห์ก็หมดปี ลองวิธีง่าย ๆ ใช้เวลานี้กับคนและสิ่งที่รัก แทนการไถฟีด</p></li>
+<li data-topics="money"><a class="pt" href="../../th/blog/black-friday-scroll-shop-less-on-your-phone/">ไถช้อปช่วงเซล: ช้อปให้น้อยลงบนมือถือ</a><p class="small"><time datetime="2026-11-15">15 พ.ย. 2569</time> · อ่าน 3 นาที</p><p>ตัวนับเวลาและแฟลชเซลดึงเราเหมือนฟีด ลองวิธีเล็ก ๆ ง่าย ๆ ให้ช้อปน้อยลงและมีเวลาตอนเย็นกลับมา</p></li>
+<li data-topics="family"><a class="pt" href="../../th/blog/put-your-phone-down-at-the-dinner-table/">วางมือถือลงบนโต๊ะอาหารยังไงดี</a><p class="small"><time datetime="2026-11-15">15 พ.ย. 2569</time> · อ่าน 3 นาที</p><p>มื้อค่ำช่วงวันหยุดคือเวลาหายากที่ได้อยู่กับคนที่รัก ลองวิธีเล็ก ๆ อ่อนโยน ให้วางมือถือและอยู่กับมื้อนั้นจริง ๆ</p></li>
+<li data-topics="study"><a class="pt" href="../../th/blog/exam-week-keep-your-phone-from-eating-study-time/">สัปดาห์สอบ: อย่าให้มือถือกินเวลาอ่านหนังสือ</a><p class="small"><time datetime="2026-11-15">15 พ.ย. 2569</time> · อ่าน 3 นาที</p><p>ใกล้สอบปลายภาคแล้ว ลองวิธีเล็ก ๆ ง่าย ๆ ให้อ่านหนังสือโดยไม่ต้องหยิบมือถือขึ้นมาดูทุกไม่กี่นาที และรักษาสมาธิไว้</p></li>
+<li data-topics="family"><a class="pt" href="../../th/blog/a-gift-for-your-people-your-full-attention/">ของขวัญให้คนที่รัก: ความใส่ใจเต็มที่ของคุณ</a><p class="small"><time datetime="2026-11-15">15 พ.ย. 2569</time> · อ่าน 3 นาที</p><p>ปีใหม่นี้ ลองให้ของขวัญที่ไม่ต้องซื้อ คือความใส่ใจเต็มที่ของคุณ วิธีง่าย ๆ ที่จะวางมือถือแล้วอยู่กับคนตรงหน้า</p></li>
+<li data-topics="family"><a class="pt" href="../../th/blog/your-phone-on-a-holiday-trip-how-to-look-up/">มือถือตอนไปเที่ยว: ทำอย่างไรให้เงยหน้าดูวิว</a><p class="small"><time datetime="2026-11-15">15 พ.ย. 2569</time> · อ่าน 3 นาที</p><p>อยากเที่ยวให้เต็มตา ไม่ใช่เที่ยวผ่านจอ วิธีง่าย ๆ ถ่ายรูปไม่กี่ใบ เก็บมือถือ แล้วค่อยโพสต์ทีหลัง ให้ทริปช่วงหยุดยาวอยู่ในความทรงจำ</p></li>
+<li data-topics="study habits"><a class="pt" href="../../th/blog/new-year-goal-scroll-less-make-it-stick/">เป้าหมายปีใหม่: ไถให้น้อยลง ทำอย่างไรให้ทำได้ต่อ</a><p class="small"><time datetime="2026-11-15">15 พ.ย. 2569</time> · อ่าน 3 นาที</p><p>ทำไมเป้าหมายปีใหม่ถึงจางไปก่อนเดือนกุมภาพันธ์ วิธีเล็ก ๆ ชัด ๆ ที่จะไถให้น้อยลง และไปต่อได้แม้มีวันที่พลาด</p></li>
+<li data-topics="money"><a class="pt" href="../../th/blog/what-is-1-hour-a-day-more-than-15-days-a-year/">วันละ 1 ชั่วโมงคือเท่าไร มากกว่า 15 วันต่อปี</a><p class="small"><time datetime="2026-11-15">15 พ.ย. 2569</time> · อ่าน 3 นาที</p><p>มือถือใช้เวลาของปีคุณไปเท่าไร วิธีนับชั่วโมงและวันของตัวเองแบบง่าย ๆ พร้อมไอเดียเล็ก ๆ ที่จะเอาเวลากลับมา</p></li>
 </ul></section>
 </div></article>
 <section class="pt0"><div class="wrap narrow"><div class="box rv">
@@ -236,6 +248,18 @@ if(rm){cur=to;big.textContent=to.toFixed(1);return}
 var from=cur,t0=performance.now();
 (function f(n){var p=Math.min((n-t0)/450,1);cur=from+(to-from)*(1-Math.pow(1-p,3));big.textContent=cur.toFixed(1);if(p<1)raf=requestAnimationFrame(f)})(t0)};
 m.oninput=function(){mo.textContent=m.value;paint(m.value*365/1440)};
+}
+var C=d.querySelector('.chips');
+if(C){
+var cb=[].slice.call(C.querySelectorAll('button')),li=d.querySelectorAll('.posts li'),cn=g('tcount');
+var pick=function(t,keep){
+if(!cb.some(function(e){return e.dataset.t===t}))t='';
+var n=0;[].forEach.call(li,function(e){var on=!t||(' '+e.dataset.topics+' ').indexOf(' '+t+' ')>=0;e.hidden=!on;if(on)n++});
+cb.forEach(function(e){e.setAttribute('aria-pressed',e.dataset.t===t)});
+cn.hidden=!t;cn.textContent=n==1?C.dataset.one:C.dataset.n.replace('%n',n);
+if(keep&&history.replaceState)history.replaceState(null,'',t?'#'+t:location.pathname+location.search)};
+cb.forEach(function(e){e.hidden=false;e.onclick=function(){pick(e.dataset.t,1)}});
+var hs=function(){pick(location.hash.slice(1),0)};hs();addEventListener('hashchange',hs);
 }
 var dev=g('dev'),steps=d.querySelectorAll('.step');
 if(dev&&steps.length&&IO){
