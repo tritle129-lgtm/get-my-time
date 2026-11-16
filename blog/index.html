@@ -45,9 +45,9 @@ a{color:var(--link)}
 .top .pill,.lang{white-space:nowrap;flex-shrink:0}
 .top .nav{color:var(--text);text-decoration:none;font-weight:600;font-size:.95rem;white-space:nowrap;padding:6px 2px;min-height:30px;display:inline-flex;align-items:center;border-bottom:2px solid transparent}
 .top .nav[aria-current]{font-weight:700;border-bottom-color:currentColor}
-@media(max-width:399px){.top .bt{display:none}}
+@media(max-width:520px){.top .bt{display:none}}
 .fromblog ul{padding-left:20px}.fromblog li{margin:6px 0}.fromblog .all{font-weight:600;text-decoration:none}
-.brand{min-width:0;white-space:nowrap}
+.brand{min-width:0;white-space:nowrap;overflow:hidden;flex-shrink:0}
 @media(max-width:359px){.bt{display:none}}
 h1{font-size:clamp(2.7rem,10vw,6.2rem);line-height:1.02;letter-spacing:-.035em;font-weight:800;margin:0 0 20px}
 h2{font-size:clamp(2.1rem,6.5vw,4rem);line-height:1.08;letter-spacing:-.03em;font-weight:800;margin:0 0 20px}
@@ -163,7 +163,7 @@ html{scroll-behavior:auto}
 </style>
 </head>
 <body>
-<header class="top"><div class="wrap"><a class="brand" href="../"><img src="../get/icon.png" alt="" width="28" height="28"><span class="bt">Get My Time</span></a><div class="right"><a class="nav" href="../blog/" aria-current="page">Blog</a><nav class="lang" aria-label="Language"><span lang="en" aria-current="page">EN</span><a lang="th" hreflang="th" href="../th/blog/">ไทย</a></nav><a class="pill" href="../get/?s=blog">Get the app</a></div></div></header>
+<header class="top"><div class="wrap"><a class="brand" href="../" aria-label="Get My Time"><img src="../get/icon.png" alt="" width="28" height="28"><span class="bt">Get My Time</span></a><div class="right"><a class="nav" href="../blog/" aria-current="page">Blog</a><nav class="lang" aria-label="Language"><span lang="en" aria-current="page">EN</span><a lang="th" hreflang="th" href="../th/blog/">ไทย</a></nav><a class="pill" href="../get/?s=blog">Get the app</a></div></div></header>
 <main id="top">
 <article class="q"><div class="wrap narrow">
 <section class="qtop">
