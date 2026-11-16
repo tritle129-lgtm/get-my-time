@@ -44,6 +44,10 @@ a{color:var(--link)}
 .pill{background:var(--button);color:var(--on-button);font-weight:600;font-size:.95rem;text-decoration:none;padding:8px 16px;border-radius:99px;min-height:36px;display:inline-flex;align-items:center}
 @media(max-width:430px){.right{gap:8px}.lang a,.lang span{padding:5px 9px}.top .pill{padding:7px 12px;font-size:.9rem}}
 .top .pill,.lang{white-space:nowrap;flex-shrink:0}
+.top .nav{color:var(--text);text-decoration:none;font-weight:600;font-size:.95rem;white-space:nowrap;padding:6px 2px;min-height:30px;display:inline-flex;align-items:center;border-bottom:2px solid transparent}
+.top .nav[aria-current]{font-weight:700;border-bottom-color:currentColor}
+@media(max-width:399px){.top .bt{display:none}}
+.fromblog ul{padding-left:20px}.fromblog li{margin:6px 0}.fromblog .all{font-weight:600;text-decoration:none}
 .brand{min-width:0;white-space:nowrap}
 @media(max-width:359px){.bt{display:none}}
 h1{font-size:clamp(2.7rem,10vw,6.2rem);line-height:1.02;letter-spacing:-.035em;font-weight:800;margin:0 0 20px}
@@ -155,11 +159,11 @@ html{scroll-behavior:auto}
 </style>
 </head>
 <body>
-<header class="top"><div class="wrap"><a class="brand" href="../../"><img src="../../get/icon.png" alt="" width="28" height="28"><span class="bt">Get My Time</span></a><div class="right"><nav class="lang" aria-label="Language"><span lang="en" aria-current="page">EN</span><a lang="th" hreflang="th" href="../../th/blog/put-your-phone-down-at-the-dinner-table/">ไทย</a></nav><a class="pill" href="../../get/?s=blog">Get the app</a></div></div></header>
+<header class="top"><div class="wrap"><a class="brand" href="../../"><img src="../../get/icon.png" alt="" width="28" height="28"><span class="bt">Get My Time</span></a><div class="right"><a class="nav" href="../../blog/" aria-current="page">Blog</a><nav class="lang" aria-label="Language"><span lang="en" aria-current="page">EN</span><a lang="th" hreflang="th" href="../../th/blog/put-your-phone-down-at-the-dinner-table/">ไทย</a></nav><a class="pill" href="../../get/?s=blog">Get the app</a></div></div></header>
 <main id="top">
 <article class="q"><div class="wrap narrow">
 <section class="qtop">
-<p class="small crumb"><a href="../../blog/">Blog</a></p>
+<p class="small crumb"><a href="../../blog/">← All posts</a></p>
 <h1>How to put your phone down at the dinner table</h1>
 <p class="small meta"><time datetime="2026-11-15">15 Nov 2026</time> · 3 min read</p>
 <figure class="photo"><picture><source srcset="../../img/blog/put-your-phone-down-at-the-dinner-table.webp" type="image/webp"><img src="../../img/blog/put-your-phone-down-at-the-dinner-table.jpg" alt="A family of several ages shares dinner at a warm kitchen table." width="1200" height="800" fetchpriority="high"></picture><figcaption>Photo: <a href="https://www.pexels.com/photo/a-family-at-a-table-5591173/" rel="noopener">Tima Miroshnichenko, Pexels</a></figcaption></figure>
@@ -198,6 +202,7 @@ html{scroll-behavior:auto}
 <p>At your limit, a Time is up screen stops the app. It opens again after midnight. Free to start, no account, and your data stays on your phone.</p>
 <p class="go"><a class="button" href="../../get/?s=blog">Get the app</a></p>
 </div></section>
+<p class="small crumb"><a href="../../blog/">← All posts</a></p>
 </div></article>
 <section class="pt0"><div class="wrap narrow"><div class="box rv">
 <h2>In one sentence</h2>

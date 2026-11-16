@@ -44,6 +44,10 @@ a{color:var(--link)}
 .pill{background:var(--button);color:var(--on-button);font-weight:600;font-size:.95rem;text-decoration:none;padding:8px 16px;border-radius:99px;min-height:36px;display:inline-flex;align-items:center}
 @media(max-width:430px){.right{gap:8px}.lang a,.lang span{padding:5px 9px}.top .pill{padding:7px 12px;font-size:.9rem}}
 .top .pill,.lang{white-space:nowrap;flex-shrink:0}
+.top .nav{color:var(--text);text-decoration:none;font-weight:600;font-size:.95rem;white-space:nowrap;padding:6px 2px;min-height:30px;display:inline-flex;align-items:center;border-bottom:2px solid transparent}
+.top .nav[aria-current]{font-weight:700;border-bottom-color:currentColor}
+@media(max-width:399px){.top .bt{display:none}}
+.fromblog ul{padding-left:20px}.fromblog li{margin:6px 0}.fromblog .all{font-weight:600;text-decoration:none}
 .brand{min-width:0;white-space:nowrap}
 @media(max-width:359px){.bt{display:none}}
 h1{font-size:clamp(2.7rem,10vw,6.2rem);line-height:1.02;letter-spacing:-.035em;font-weight:800;margin:0 0 20px}
@@ -155,7 +159,7 @@ html{scroll-behavior:auto}
 </style>
 </head>
 <body>
-<header class="top"><div class="wrap"><a class="brand" href="../th/"><img src="../get/icon.png" alt="" width="28" height="28"><span class="bt">Get My Time</span></a><div class="right"><nav class="lang" aria-label="Language"><a lang="en" hreflang="en" href="../">EN</a><span lang="th" aria-current="page">ไทย</span></nav><a class="pill" href="../get/">โหลดแอป</a></div></div></header>
+<header class="top"><div class="wrap"><a class="brand" href="../th/"><img src="../get/icon.png" alt="" width="28" height="28"><span class="bt">Get My Time</span></a><div class="right"><a class="nav" href="../th/blog/">บล็อก</a><nav class="lang" aria-label="Language"><a lang="en" hreflang="en" href="../">EN</a><span lang="th" aria-current="page">ไทย</span></nav><a class="pill" href="../get/">โหลดแอป</a></div></div></header>
 <main id="top">
 <section class="hero c"><div class="wrap">
 <img class="hg" src="../img/hg_calm.png" alt="" width="220" height="220">
@@ -259,6 +263,12 @@ html{scroll-behavior:auto}
 <p>จะขึ้นหน้าหมดเวลาแล้ว และแอปจะปิดอยู่จนถึงเที่ยงคืน หลังเที่ยงคืนเปิดได้อีกครั้ง</p>
 <h3>ข้อมูลของฉันอยู่ที่ไหน</h3>
 <p>อยู่ในมือถือของคุณ GMT ไม่ต้องใช้บัญชี และไม่ส่งข้อมูลออกไปไหน</p>
+</div></section>
+<section class="fromblog pt0"><div class="wrap narrow">
+<h2 class="h2s">จากบล็อก</h2><ul>
+<li><a href="../th/blog/take-back-the-last-6-weeks-of-the-year/">เอา 6 สัปดาห์สุดท้ายของปีกลับมา</a></li>
+<li><a href="../th/blog/black-friday-scroll-shop-less-on-your-phone/">ไถช้อปช่วงเซล: ช้อปให้น้อยลงบนมือถือ</a></li>
+</ul><p><a class="all" href="../th/blog/">บทความทั้งหมด →</a></p>
 </div></section>
 <nav class="more"><div class="wrap narrow">
 <h2 class="h2s">คำถามอื่นที่คนถามบ่อย</h2>

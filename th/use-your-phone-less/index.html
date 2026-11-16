@@ -43,6 +43,10 @@ a{color:var(--link)}
 .pill{background:var(--button);color:var(--on-button);font-weight:600;font-size:.95rem;text-decoration:none;padding:8px 16px;border-radius:99px;min-height:36px;display:inline-flex;align-items:center}
 @media(max-width:430px){.right{gap:8px}.lang a,.lang span{padding:5px 9px}.top .pill{padding:7px 12px;font-size:.9rem}}
 .top .pill,.lang{white-space:nowrap;flex-shrink:0}
+.top .nav{color:var(--text);text-decoration:none;font-weight:600;font-size:.95rem;white-space:nowrap;padding:6px 2px;min-height:30px;display:inline-flex;align-items:center;border-bottom:2px solid transparent}
+.top .nav[aria-current]{font-weight:700;border-bottom-color:currentColor}
+@media(max-width:399px){.top .bt{display:none}}
+.fromblog ul{padding-left:20px}.fromblog li{margin:6px 0}.fromblog .all{font-weight:600;text-decoration:none}
 .brand{min-width:0;white-space:nowrap}
 @media(max-width:359px){.bt{display:none}}
 h1{font-size:clamp(2.7rem,10vw,6.2rem);line-height:1.02;letter-spacing:-.035em;font-weight:800;margin:0 0 20px}
@@ -154,7 +158,7 @@ html{scroll-behavior:auto}
 </style>
 </head>
 <body>
-<header class="top"><div class="wrap"><a class="brand" href="../../th/"><img src="../../get/icon.png" alt="" width="28" height="28"><span class="bt">Get My Time</span></a><div class="right"><nav class="lang" aria-label="Language"><a lang="en" hreflang="en" href="../../use-your-phone-less/">EN</a><span lang="th" aria-current="page">ไทย</span></nav><a class="pill" href="../../get/">โหลดแอป</a></div></div></header>
+<header class="top"><div class="wrap"><a class="brand" href="../../th/"><img src="../../get/icon.png" alt="" width="28" height="28"><span class="bt">Get My Time</span></a><div class="right"><a class="nav" href="../../th/blog/">บล็อก</a><nav class="lang" aria-label="Language"><a lang="en" hreflang="en" href="../../use-your-phone-less/">EN</a><span lang="th" aria-current="page">ไทย</span></nav><a class="pill" href="../../get/">โหลดแอป</a></div></div></header>
 <main id="top">
 <article class="q"><div class="wrap narrow">
 <section class="qtop">
