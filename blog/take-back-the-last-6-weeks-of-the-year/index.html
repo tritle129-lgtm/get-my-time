@@ -6,6 +6,7 @@
 <title>Take back the last 6 weeks of the year | Get My Time</title>
 <meta name="description" content="Six weeks are left in the year. Here is a simple way to spend them on the people and things you love, not on the scroll.">
 <link rel="canonical" href="https://tritle129-lgtm.github.io/get-my-time/blog/take-back-the-last-6-weeks-of-the-year/">
+<script data-goatcounter="https://getmytime2026.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 <link rel="alternate" hreflang="en" href="https://tritle129-lgtm.github.io/get-my-time/blog/take-back-the-last-6-weeks-of-the-year/">
 <link rel="alternate" hreflang="th" href="https://tritle129-lgtm.github.io/get-my-time/th/blog/take-back-the-last-6-weeks-of-the-year/">
 <link rel="alternate" hreflang="x-default" href="https://tritle129-lgtm.github.io/get-my-time/blog/take-back-the-last-6-weeks-of-the-year/">
@@ -171,7 +172,7 @@ html{scroll-behavior:auto}
 <section class="qtop">
 <p class="small crumb"><a href="../../blog/">← All posts</a></p>
 <h1>Take back the last 6 weeks of the year</h1>
-<p class="small meta"><time datetime="2026-11-15">15 Nov 2026</time> · 3 min read</p>
+<p class="small meta"><time datetime="2026-11-15">15 Nov 2026</time> · 3 min read<span class="reads" hidden data-gc="getmytime2026" data-min="100" data-p="/get-my-time/blog/take-back-the-last-6-weeks-of-the-year/ /get-my-time/th/blog/take-back-the-last-6-weeks-of-the-year/" data-t="%n reads"></span></p>
 <p class="small topics">Topic: <a class="chip" href="../../blog/#habits">Daily habits</a> <a class="chip" href="../../blog/#family">Family and friends</a></p>
 <figure class="photo"><picture><source srcset="../../img/blog/take-back-the-last-6-weeks-of-the-year.webp" type="image/webp"><img src="../../img/blog/take-back-the-last-6-weeks-of-the-year.jpg" alt="Friends share a meal around a candle on a warm evening." width="1200" height="800" fetchpriority="high"></picture><figcaption>Photo: <a href="https://unsplash.com/photos/people-gathered-around-a-table-with-a-lit-candle-7LVZt5YG69g" rel="noopener">Tanya Prodaan, Unsplash</a></figcaption></figure>
 <p class="answer">Yes, you can. Six weeks is enough to change one phone habit. Pick one app, add a pause and a limit, and see what you get back.</p>
@@ -296,6 +297,13 @@ cn.hidden=!t;cn.textContent=n==1?C.dataset.one:C.dataset.n.replace('%n',n);
 if(keep&&history.replaceState)history.replaceState(null,'',t?'#'+t:location.pathname+location.search)};
 cb.forEach(function(e){e.hidden=false;e.onclick=function(){pick(e.dataset.t,1)}});
 var hs=function(){pick(location.hash.slice(1),0)};hs();addEventListener('hashchange',hs);
+}
+var RS=d.querySelectorAll('.reads[data-p]');
+if(RS.length&&window.fetch&&window.Promise){
+var cache={},get=function(gc,p){var k=gc+p;return cache[k]||(cache[k]=fetch('https://'+gc+'.goatcounter.com/counter/'+encodeURIComponent(p)+'.json').then(function(r){return r.ok?r.json():{count:0}}).then(function(j){return +String(j.count).replace(/\D/g,'')||0},function(){return 0}))};
+[].forEach.call(RS,function(e){Promise.all(e.dataset.p.split(' ').map(function(p){return get(e.dataset.gc,p)})).then(function(a){
+var n=a.reduce(function(x,y){return x+y},0);
+if(n>=+e.dataset.min){e.textContent=' · '+e.dataset.t.replace('%n',n.toLocaleString(d.documentElement.lang));e.hidden=false}})});
 }
 var dev=g('dev'),steps=d.querySelectorAll('.step');
 if(dev&&steps.length&&IO){

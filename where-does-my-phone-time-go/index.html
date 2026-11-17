@@ -6,6 +6,7 @@
 <title>Where does my phone time go? | Get My Time</title>
 <meta name="description" content="How to see where your phone time goes, app by app, and what it is worth. Easy steps, plus how Get My Time shows it as money and days.">
 <link rel="canonical" href="https://tritle129-lgtm.github.io/get-my-time/where-does-my-phone-time-go/">
+<script data-goatcounter="https://getmytime2026.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 <link rel="alternate" hreflang="en" href="https://tritle129-lgtm.github.io/get-my-time/where-does-my-phone-time-go/">
 <link rel="alternate" hreflang="th" href="https://tritle129-lgtm.github.io/get-my-time/th/where-does-my-phone-time-go/">
 <link rel="alternate" hreflang="x-default" href="https://tritle129-lgtm.github.io/get-my-time/where-does-my-phone-time-go/">
@@ -274,6 +275,13 @@ cn.hidden=!t;cn.textContent=n==1?C.dataset.one:C.dataset.n.replace('%n',n);
 if(keep&&history.replaceState)history.replaceState(null,'',t?'#'+t:location.pathname+location.search)};
 cb.forEach(function(e){e.hidden=false;e.onclick=function(){pick(e.dataset.t,1)}});
 var hs=function(){pick(location.hash.slice(1),0)};hs();addEventListener('hashchange',hs);
+}
+var RS=d.querySelectorAll('.reads[data-p]');
+if(RS.length&&window.fetch&&window.Promise){
+var cache={},get=function(gc,p){var k=gc+p;return cache[k]||(cache[k]=fetch('https://'+gc+'.goatcounter.com/counter/'+encodeURIComponent(p)+'.json').then(function(r){return r.ok?r.json():{count:0}}).then(function(j){return +String(j.count).replace(/\D/g,'')||0},function(){return 0}))};
+[].forEach.call(RS,function(e){Promise.all(e.dataset.p.split(' ').map(function(p){return get(e.dataset.gc,p)})).then(function(a){
+var n=a.reduce(function(x,y){return x+y},0);
+if(n>=+e.dataset.min){e.textContent=' · '+e.dataset.t.replace('%n',n.toLocaleString(d.documentElement.lang));e.hidden=false}})});
 }
 var dev=g('dev'),steps=d.querySelectorAll('.step');
 if(dev&&steps.length&&IO){

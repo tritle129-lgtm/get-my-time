@@ -6,6 +6,7 @@
 <title>Exam week: keep your phone from eating study time | Get My Time</title>
 <meta name="description" content="Finals are close. Here are small, easy ways to study without checking your phone every few minutes, and keep your focus.">
 <link rel="canonical" href="https://tritle129-lgtm.github.io/get-my-time/blog/exam-week-keep-your-phone-from-eating-study-time/">
+<script data-goatcounter="https://getmytime2026.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 <link rel="alternate" hreflang="en" href="https://tritle129-lgtm.github.io/get-my-time/blog/exam-week-keep-your-phone-from-eating-study-time/">
 <link rel="alternate" hreflang="th" href="https://tritle129-lgtm.github.io/get-my-time/th/blog/exam-week-keep-your-phone-from-eating-study-time/">
 <link rel="alternate" hreflang="x-default" href="https://tritle129-lgtm.github.io/get-my-time/blog/exam-week-keep-your-phone-from-eating-study-time/">
@@ -171,7 +172,7 @@ html{scroll-behavior:auto}
 <section class="qtop">
 <p class="small crumb"><a href="../../blog/">← All posts</a></p>
 <h1>Exam week: keep your phone from eating study time</h1>
-<p class="small meta"><time datetime="2026-11-15">15 Nov 2026</time> · 3 min read</p>
+<p class="small meta"><time datetime="2026-11-15">15 Nov 2026</time> · 3 min read<span class="reads" hidden data-gc="getmytime2026" data-min="100" data-p="/get-my-time/blog/exam-week-keep-your-phone-from-eating-study-time/ /get-my-time/th/blog/exam-week-keep-your-phone-from-eating-study-time/" data-t="%n reads"></span></p>
 <p class="small topics">Topic: <a class="chip" href="../../blog/#study">Study and goals</a></p>
 <figure class="photo"><picture><source srcset="../../img/blog/exam-week-keep-your-phone-from-eating-study-time.webp" type="image/webp"><img src="../../img/blog/exam-week-keep-your-phone-from-eating-study-time.jpg" alt="A young man in glasses takes notes from a book at a desk under a lamp." width="1200" height="800" fetchpriority="high"></picture><figcaption>Photo: <a href="https://www.pexels.com/photo/a-man-taking-notes-while-reading-a-book-6549598/" rel="noopener">Tima Miroshnichenko, Pexels</a></figcaption></figure>
 <p class="answer">Put the phone out of reach, study in short blocks, and use the phone only as a break. Set your app limits before exam week starts, so the choice is already made.</p>
@@ -292,6 +293,13 @@ cn.hidden=!t;cn.textContent=n==1?C.dataset.one:C.dataset.n.replace('%n',n);
 if(keep&&history.replaceState)history.replaceState(null,'',t?'#'+t:location.pathname+location.search)};
 cb.forEach(function(e){e.hidden=false;e.onclick=function(){pick(e.dataset.t,1)}});
 var hs=function(){pick(location.hash.slice(1),0)};hs();addEventListener('hashchange',hs);
+}
+var RS=d.querySelectorAll('.reads[data-p]');
+if(RS.length&&window.fetch&&window.Promise){
+var cache={},get=function(gc,p){var k=gc+p;return cache[k]||(cache[k]=fetch('https://'+gc+'.goatcounter.com/counter/'+encodeURIComponent(p)+'.json').then(function(r){return r.ok?r.json():{count:0}}).then(function(j){return +String(j.count).replace(/\D/g,'')||0},function(){return 0}))};
+[].forEach.call(RS,function(e){Promise.all(e.dataset.p.split(' ').map(function(p){return get(e.dataset.gc,p)})).then(function(a){
+var n=a.reduce(function(x,y){return x+y},0);
+if(n>=+e.dataset.min){e.textContent=' · '+e.dataset.t.replace('%n',n.toLocaleString(d.documentElement.lang));e.hidden=false}})});
 }
 var dev=g('dev'),steps=d.querySelectorAll('.step');
 if(dev&&steps.length&&IO){
