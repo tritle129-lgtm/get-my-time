@@ -43,6 +43,7 @@
 ## Blog (a short post every week)
 
 - [Get your time back](https://tritle129-lgtm.github.io/get-my-time/blog/): Short posts, a new one every week. Each one gives you one small step you can try today.
+- [Limits you can keep: how to pick the right number](https://tritle129-lgtm.github.io/get-my-time/blog/limits-you-can-keep-how-to-pick-the-right-number/): Start from what you use now, then cut about a quarter. Keep that number for one week. If it felt fine, cut a little more. A limit you can keep beats a strict one you break.
 - [The 10-second pause: why a short stop works](https://tritle129-lgtm.github.io/get-my-time/blog/the-10-second-pause-why-a-short-stop-works/): Yes, it can. A 10-second pause gives you a moment to choose before an app opens. In that moment you can ask, "Do I want this right now?" Often that is enough.
 - [Phone in bed: how to stop the late-night scroll](https://tritle129-lgtm.github.io/get-my-time/blog/phone-in-bed-how-to-stop-the-late-night-scroll/): Make the phone sleep somewhere else, and give your hands something to do. Add a short wind-down, and a daily limit for the apps that pull you. Small steps work better than one big rule.
 - [Take back the last 6 weeks of the year](https://tritle129-lgtm.github.io/get-my-time/blog/take-back-the-last-6-weeks-of-the-year/): Yes, you can. Six weeks is enough to change one phone habit. Pick one app, add a pause and a limit, and see what you get back.
@@ -67,6 +68,7 @@
 - [แอปล็อกแอป แอปบล็อกแอป สำหรับ Android และ iPhone](https://tritle129-lgtm.github.io/get-my-time/th/app-blocker-android-iphone/)
 - [มีอะไรที่ดีกว่าตัวเช็กเวลาหน้าจอในมือถือไหม](https://tritle129-lgtm.github.io/get-my-time/th/more-than-screen-time-minutes/)
 - [เอาเวลาของคุณกลับมา](https://tritle129-lgtm.github.io/get-my-time/th/blog/)
+- [ลิมิตที่ทำได้จริง: เลือกกี่นาทีดี](https://tritle129-lgtm.github.io/get-my-time/th/blog/limits-you-can-keep-how-to-pick-the-right-number/)
 - [การพัก 10 วินาที: ทำไมหยุดสั้น ๆ ถึงช่วยได้](https://tritle129-lgtm.github.io/get-my-time/th/blog/the-10-second-pause-why-a-short-stop-works/)
 - [มือถือบนเตียง: วิธีหยุดเลื่อนตอนดึก](https://tritle129-lgtm.github.io/get-my-time/th/blog/phone-in-bed-how-to-stop-the-late-night-scroll/)
 - [เอา 6 สัปดาห์สุดท้ายของปีกลับมา](https://tritle129-lgtm.github.io/get-my-time/th/blog/take-back-the-last-6-weeks-of-the-year/)
