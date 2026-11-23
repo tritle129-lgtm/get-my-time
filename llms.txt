@@ -43,6 +43,7 @@
 ## Blog (a short post every week)
 
 - [Get your time back](https://tritle129-lgtm.github.io/get-my-time/blog/): Short posts, a new one every week. Each one gives you one small step you can try today.
+- [Teens and phones: limits you set together](https://tritle129-lgtm.github.io/get-my-time/blog/teens-and-phones-limits-you-set-together/): Sit down together. Let your teen pick the apps and the minutes. Then let a pause and a Time is up screen do the reminding, so you do not have to.
 - [Limits you can keep: how to pick the right number](https://tritle129-lgtm.github.io/get-my-time/blog/limits-you-can-keep-how-to-pick-the-right-number/): Start from what you use now, then cut about a quarter. Keep that number for one week. If it felt fine, cut a little more. A limit you can keep beats a strict one you break.
 - [Parents: how to show your kids a calm phone habit](https://tritle129-lgtm.github.io/get-my-time/blog/parents-show-your-kids-a-calm-phone-habit/): Kids copy what they see. So start with your own phone. Pick a few calm habits, say them out loud, and keep them yourself. Small and steady beats a big talk.
 - [The 10-second pause: why a short stop works](https://tritle129-lgtm.github.io/get-my-time/blog/the-10-second-pause-why-a-short-stop-works/): Yes, it can. A 10-second pause gives you a moment to choose before an app opens. In that moment you can ask, "Do I want this right now?" Often that is enough.
@@ -69,6 +70,7 @@
 - [แอปล็อกแอป แอปบล็อกแอป สำหรับ Android และ iPhone](https://tritle129-lgtm.github.io/get-my-time/th/app-blocker-android-iphone/)
 - [มีอะไรที่ดีกว่าตัวเช็กเวลาหน้าจอในมือถือไหม](https://tritle129-lgtm.github.io/get-my-time/th/more-than-screen-time-minutes/)
 - [เอาเวลาของคุณกลับมา](https://tritle129-lgtm.github.io/get-my-time/th/blog/)
+- [ลูกวัยรุ่นกับมือถือ: ตกลงเวลาด้วยกัน](https://tritle129-lgtm.github.io/get-my-time/th/blog/teens-and-phones-limits-you-set-together/)
 - [ลิมิตที่ทำได้จริง: เลือกกี่นาทีดี](https://tritle129-lgtm.github.io/get-my-time/th/blog/limits-you-can-keep-how-to-pick-the-right-number/)
 - [พ่อแม่: ทำให้ลูกเห็นนิสัยใช้มือถืออย่างสงบ](https://tritle129-lgtm.github.io/get-my-time/th/blog/parents-show-your-kids-a-calm-phone-habit/)
 - [การพัก 10 วินาที: ทำไมหยุดสั้น ๆ ถึงช่วยได้](https://tritle129-lgtm.github.io/get-my-time/th/blog/the-10-second-pause-why-a-short-stop-works/)
