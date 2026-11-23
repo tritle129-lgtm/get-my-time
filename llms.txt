@@ -43,6 +43,7 @@
 ## Blog (a short post every week)
 
 - [Get your time back](https://tritle129-lgtm.github.io/get-my-time/blog/): Short posts, a new one every week. Each one gives you one small step you can try today.
+- [30 small things to do together instead of scrolling](https://tritle129-lgtm.github.io/get-my-time/blog/30-small-things-to-do-together-instead-of-scrolling/): Pick one small thing you can do with the people near you, like a card game, a walk or a story. Ask, do not order, and put your own phone down first.
 - [Days off fly by: don't give them to the feed](https://tritle129-lgtm.github.io/get-my-time/blog/days-off-fly-by-dont-give-them-to-the-feed/): Pick one good thing for each day off before it starts. Keep the phone for people and maps, and give the feed a short window in the evening.
 - [Let only the people you love buzz your phone](https://tritle129-lgtm.github.io/get-my-time/blog/let-only-the-people-you-love-buzz-your-phone/): Most buzzes come from apps, not people. Turn those off and keep the buzz for the people you love. Then each buzz is worth picking up.
 - [Short videos: one more, and the evening is gone](https://tritle129-lgtm.github.io/get-my-time/blog/short-videos-one-more-and-the-evening-is-gone/): Decide what your evening is for before you sit down. Then make the next video a little harder to reach, and pick your minutes before you open the app.
@@ -73,6 +74,7 @@
 - [แอปล็อกแอป แอปบล็อกแอป สำหรับ Android และ iPhone](https://tritle129-lgtm.github.io/get-my-time/th/app-blocker-android-iphone/)
 - [มีอะไรที่ดีกว่าตัวเช็กเวลาหน้าจอในมือถือไหม](https://tritle129-lgtm.github.io/get-my-time/th/more-than-screen-time-minutes/)
 - [เอาเวลาของคุณกลับมา](https://tritle129-lgtm.github.io/get-my-time/th/blog/)
+- [30 อย่างที่ทำด้วยกันได้ แทนการไถมือถือ](https://tritle129-lgtm.github.io/get-my-time/th/blog/30-small-things-to-do-together-instead-of-scrolling/)
 - [วันหยุดผ่านไปเร็ว: อย่ายกให้ฟีดหมด](https://tritle129-lgtm.github.io/get-my-time/th/blog/days-off-fly-by-dont-give-them-to-the-feed/)
 - [ให้แค่คนที่คุณรักทำให้มือถือสั่น](https://tritle129-lgtm.github.io/get-my-time/th/blog/let-only-the-people-you-love-buzz-your-phone/)
 - [คลิปสั้น: อีกคลิปเดียว แล้วทั้งเย็นก็หายไป](https://tritle129-lgtm.github.io/get-my-time/th/blog/short-videos-one-more-and-the-evening-is-gone/)
