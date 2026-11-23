@@ -43,6 +43,7 @@
 ## Blog (a short post every week)
 
 - [Get your time back](https://tritle129-lgtm.github.io/get-my-time/blog/): Short posts, a new one every week. Each one gives you one small step you can try today.
+- [Days off fly by: don't give them to the feed](https://tritle129-lgtm.github.io/get-my-time/blog/days-off-fly-by-dont-give-them-to-the-feed/): Pick one good thing for each day off before it starts. Keep the phone for people and maps, and give the feed a short window in the evening.
 - [Let only the people you love buzz your phone](https://tritle129-lgtm.github.io/get-my-time/blog/let-only-the-people-you-love-buzz-your-phone/): Most buzzes come from apps, not people. Turn those off and keep the buzz for the people you love. Then each buzz is worth picking up.
 - [Short videos: one more, and the evening is gone](https://tritle129-lgtm.github.io/get-my-time/blog/short-videos-one-more-and-the-evening-is-gone/): Decide what your evening is for before you sit down. Then make the next video a little harder to reach, and pick your minutes before you open the app.
 - [Teens and phones: limits you set together](https://tritle129-lgtm.github.io/get-my-time/blog/teens-and-phones-limits-you-set-together/): Sit down together. Let your teen pick the apps and the minutes. Then let a pause and a Time is up screen do the reminding, so you do not have to.
@@ -72,6 +73,7 @@
 - [แอปล็อกแอป แอปบล็อกแอป สำหรับ Android และ iPhone](https://tritle129-lgtm.github.io/get-my-time/th/app-blocker-android-iphone/)
 - [มีอะไรที่ดีกว่าตัวเช็กเวลาหน้าจอในมือถือไหม](https://tritle129-lgtm.github.io/get-my-time/th/more-than-screen-time-minutes/)
 - [เอาเวลาของคุณกลับมา](https://tritle129-lgtm.github.io/get-my-time/th/blog/)
+- [วันหยุดผ่านไปเร็ว: อย่ายกให้ฟีดหมด](https://tritle129-lgtm.github.io/get-my-time/th/blog/days-off-fly-by-dont-give-them-to-the-feed/)
 - [ให้แค่คนที่คุณรักทำให้มือถือสั่น](https://tritle129-lgtm.github.io/get-my-time/th/blog/let-only-the-people-you-love-buzz-your-phone/)
 - [คลิปสั้น: อีกคลิปเดียว แล้วทั้งเย็นก็หายไป](https://tritle129-lgtm.github.io/get-my-time/th/blog/short-videos-one-more-and-the-evening-is-gone/)
 - [ลูกวัยรุ่นกับมือถือ: ตกลงเวลาด้วยกัน](https://tritle129-lgtm.github.io/get-my-time/th/blog/teens-and-phones-limits-you-set-together/)
